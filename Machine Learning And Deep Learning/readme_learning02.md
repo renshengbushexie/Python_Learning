@@ -2424,3 +2424,438 @@ SIFT的加速版本，使用积分图像和Hessian矩阵检测特征点。
 - [公平多任务学习项目](https://github.com/topics/fair-multitask-learning)
 
 ---
+## 专用领域算法
+
+### 261. 医学图像分割
+
+**运用场景：**
+- 医学诊断
+- 病灶识别
+- 手术规划
+- 治疗评估
+
+**算法原理：**
+专门用于医学图像的语义分割，考虑医学图像的特殊性质。
+
+**优缺点：**
+- 优点：专业化程度高、精度高、临床实用
+- 缺点：数据获取困难、标注成本高、泛化有限
+
+**案例推荐：**
+- [医学图像分割教程](https://github.com/topics/medical-image-segmentation)
+- [肿瘤分割项目](https://github.com/topics/tumor-segmentation)
+- [器官分割案例](https://www.kaggle.com/code/renshengbushexie/organ-segmentation)
+- [病理图像分析项目](https://github.com/topics/pathology-image-analysis)
+
+### 262. 金融时间序列预测
+
+**运用场景：**
+- 股票预测
+- 风险管理
+- 算法交易
+- 市场分析
+
+**算法原理：**
+针对金融数据的特点设计的时间序列预测算法。
+
+**优缺点：**
+- 优点：领域特化、实用价值高、商业应用
+- 缺点：市场变化快、噪声多、预测困难
+
+**案例推荐：**
+- [金融时间序列教程](https://github.com/topics/financial-time-series)
+- [股票预测项目](https://github.com/topics/stock-prediction)
+- [量化交易案例](https://www.kaggle.com/code/renshengbushexie/quantitative-trading)
+- [风险建模项目](https://github.com/topics/financial-risk-modeling)
+
+### 263. 工业异常检测
+
+**运用场景：**
+- 设备监控
+- 质量控制
+- 预测性维护
+- 工业4.0
+
+**算法原理：**
+针对工业生产环境的异常检测算法，考虑工业数据特点。
+
+**优缺点：**
+- 优点：实用价值高、成本节约、安全保障
+- 缺点：数据复杂、环境干扰、实时性要求
+
+**案例推荐：**
+- [工业异常检测教程](https://github.com/topics/industrial-anomaly-detection)
+- [设备故障预测项目](https://github.com/topics/equipment-failure-prediction)
+- [质量控制案例](https://www.kaggle.com/code/renshengbushexie/industrial-quality-control)
+- [预测性维护项目](https://github.com/topics/predictive-maintenance)
+
+### 264. 自动驾驶感知
+
+**运用场景：**
+- 环境感知
+- 目标检测
+- 路径规划
+- 安全驾驶
+
+**算法原理：**
+专门用于自动驾驶场景的感知算法，融合多传感器数据。
+
+**优缺点：**
+- 优点：安全关键、技术前沿、应用价值高
+- 缺点：复杂度极高、安全要求严格、成本高
+
+**案例推荐：**
+- [自动驾驶感知教程](https://github.com/topics/autonomous-driving-perception)
+- [3D目标检测项目](https://github.com/topics/3d-object-detection)
+- [车道线检测案例](https://www.kaggle.com/code/renshengbushexie/lane-detection)
+- [多传感器融合项目](https://github.com/topics/sensor-fusion-autonomous)
+
+### 265. 智能制造优化
+
+**运用场景：**
+- 生产调度
+- 资源优化
+- 工艺改进
+- 智能工厂
+
+**算法原理：**
+应用机器学习优化制造过程，提高效率和质量。
+
+**优缺点：**
+- 优点：效率提升、成本降低、质量改善
+- 缺点：复杂约束、实时要求、集成困难
+
+**案例推荐：**
+- [智能制造教程](https://github.com/topics/intelligent-manufacturing)
+- [生产调度优化项目](https://github.com/topics/production-scheduling)
+- [工艺参数优化案例](https://www.kaggle.com/code/renshengbushexie/process-optimization)
+- [智能工厂项目](https://github.com/topics/smart-factory)
+
+---
+
+## 认知与记忆模型
+
+### 266. 外部记忆网络（External Memory Networks）
+
+**运用场景：**
+- 长期记忆建模
+- 知识存储
+- 问答系统
+- 推理任务
+
+**算法原理：**
+为神经网络配备可读写的外部记忆，增强存储和检索能力。
+
+**优缺点：**
+- 优点：长期记忆、知识存储、可扩展
+- 缺点：设计复杂、训练困难、计算开销大
+
+**案例推荐：**
+- [外部记忆网络教程](https://github.com/topics/external-memory-networks)
+- [神经图灵机项目](https://github.com/topics/neural-turing-machine)
+- [记忆增强问答案例](https://www.kaggle.com/code/renshengbushexie/memory-augmented-qa)
+- [可微分计算机项目](https://github.com/topics/differentiable-neural-computer)
+
+### 267. 认知架构网络
+
+**运用场景：**
+- 认知建模
+- 人工通用智能
+- 多任务推理
+- 心理学建模
+
+**算法原理：**
+模拟人类认知架构的神经网络，包含感知、记忆、推理等模块。
+
+**优缺点：**
+- 优点：认知合理性、通用性强、可解释性
+- 缺点：架构复杂、训练困难、验证困难
+
+**案例推荐：**
+- [认知架构教程](https://github.com/topics/cognitive-architecture)
+- [人工通用智能项目](https://github.com/topics/artificial-general-intelligence)
+- [认知建模案例](https://www.kaggle.com/code/renshengbushexie/cognitive-modeling)
+- [多模态认知项目](https://github.com/topics/multimodal-cognitive-architecture)
+
+### 268. 元记忆学习
+
+**运用场景：**
+- 学习策略
+- 记忆管理
+- 自适应学习
+- 终身学习
+
+**算法原理：**
+学习如何管理和使用记忆，包括何时存储、检索和遗忘信息。
+
+**优缺点：**
+- 优点：自适应记忆、学习效率高、类人认知
+- 缺点：元学习复杂、训练困难、理论不足
+
+**案例推荐：**
+- [元记忆学习教程](https://github.com/topics/meta-memory-learning)
+- [自适应记忆项目](https://github.com/topics/adaptive-memory-systems)
+- [记忆管理案例](https://www.kaggle.com/code/renshengbushexie/memory-management-learning)
+- [终身记忆学习项目](https://github.com/topics/lifelong-memory-learning)
+
+### 269. 工作记忆模型
+
+**运用场景：**
+- 短期记忆建模
+- 注意力控制
+- 执行功能
+- 认知负荷
+
+**算法原理：**
+模拟人类工作记忆的有限容量和动态管理机制。
+
+**优缺点：**
+- 优点：心理学基础、认知合理、容量控制
+- 缺点：容量限制、模型简化、实现困难
+
+**案例推荐：**
+- [工作记忆模型教程](https://github.com/topics/working-memory-models)
+- [认知负荷建模项目](https://github.com/topics/cognitive-load-modeling)
+- [注意力控制案例](https://www.kaggle.com/code/renshengbushexie/attention-control-working-memory)
+- [执行功能项目](https://github.com/topics/executive-function-modeling)
+
+### 270. 情节记忆网络
+
+**运用场景：**
+- 经验学习
+- 情境推理
+- 个性化AI
+- 生活日志
+
+**算法原理：**
+模拟人类情节记忆，存储和检索特定时空情境下的经验。
+
+**优缺点：**
+- 优点：情境感知、个人化、经验学习
+- 缺点：存储开销大、检索复杂、隐私问题
+
+**案例推荐：**
+- [情节记忆网络教程](https://github.com/topics/episodic-memory-networks)
+- [经验学习项目](https://github.com/topics/experience-based-learning)
+- [情境推理案例](https://www.kaggle.com/code/renshengbushexie/episodic-memory-reasoning)
+- [个性化AI项目](https://github.com/topics/personalized-ai-memory)
+
+---
+
+## 概率推断与不确定性
+
+### 271. 变分自编码器变体（VAE Variants）
+
+**运用场景：**
+- 条件生成
+- 解耦表示
+- 半监督学习
+- 异常检测
+
+**算法原理：**
+VAE的各种改进版本，包括β-VAE、Factor-VAE、TC-VAE等。
+
+**优缺点：**
+- 优点：解耦表示、条件生成、理论基础
+- 缺点：训练不稳定、超参数敏感、生成质量
+
+**案例推荐：**
+- [VAE变体教程](https://github.com/topics/vae-variants)
+- [β-VAE解耦学习项目](https://github.com/topics/beta-vae-disentanglement)
+- [条件VAE案例](https://www.kaggle.com/code/renshengbushexie/conditional-vae)
+- [Factor-VAE项目](https://github.com/topics/factor-vae)
+
+### 272. 深度高斯过程
+
+**运用场景：**
+- 不确定性量化
+- 贝叶斯深度学习
+- 小样本学习
+- 回归分析
+
+**算法原理：**
+将高斯过程层次化组合，构建深度概率模型。
+
+**优缺点：**
+- 优点：不确定性建模、贝叶斯推断、理论优雅
+- 缺点：计算复杂、可扩展性差、推断困难
+
+**案例推荐：**
+- [深度高斯过程教程](https://github.com/topics/deep-gaussian-processes)
+- [不确定性量化项目](https://github.com/topics/uncertainty-quantification)
+- [贝叶斯深度学习案例](https://www.kaggle.com/code/renshengbushexie/bayesian-deep-learning)
+- [概率回归项目](https://github.com/topics/probabilistic-regression)
+
+### 273. 蒙特卡洛Dropout
+
+**运用场景：**
+- 不确定性估计
+- 贝叶斯神经网络
+- 模型校准
+- 主动学习
+
+**算法原理：**
+在推理时保持Dropout开启，通过多次采样估计预测不确定性。
+
+**优缺点：**
+- 优点：简单实用、计算高效、不确定性估计
+- 缺点：近似方法、理论基础弱、校准性问题
+
+**案例推荐：**
+- [蒙特卡洛Dropout教程](https://github.com/topics/monte-carlo-dropout)
+- [不确定性估计项目](https://github.com/topics/uncertainty-estimation)
+- [模型校准案例](https://www.kaggle.com/code/renshengbushexie/model-calibration-dropout)
+- [主动学习项目](https://github.com/topics/active-learning-uncertainty)
+
+### 274. 集成不确定性
+
+**运用场景：**
+- 预测可靠性
+- 风险评估
+- 决策支持
+- 安全关键应用
+
+**算法原理：**
+通过多个模型的预测分歧来估计不确定性。
+
+**优缺点：**
+- 优点：实用性强、易于实现、鲁棒性好
+- 缺点：计算成本高、存储需求大、理论分析不足
+
+**案例推荐：**
+- [集成不确定性教程](https://github.com/topics/ensemble-uncertainty)
+- [深度集成项目](https://github.com/topics/deep-ensembles)
+- [不确定性量化案例](https://www.kaggle.com/code/renshengbushexie/ensemble-uncertainty-quantification)
+- [风险评估项目](https://github.com/topics/risk-assessment-uncertainty)
+
+### 275. 标准化流变体（Normalizing Flow Variants）
+
+**运用场景：**
+- 复杂密度建模
+- 生成建模
+- 变分推断
+- 概率编程
+
+**算法原理：**
+各种改进的标准化流模型，包括实值NVP、Glow、Neural Spline Flow等。
+
+**优缺点：**
+- 优点：精确似然、可逆变换、表达能力强
+- 缺点：架构限制、计算复杂、设计困难
+
+**案例推荐：**
+- [标准化流教程](https://github.com/topics/normalizing-flows)
+- [Real NVP项目](https://github.com/topics/real-nvp)
+- [Glow生成模型案例](https://www.kaggle.com/code/renshengbushexie/glow-generative-model)
+- [Neural Spline Flow项目](https://github.com/topics/neural-spline-flows)
+
+---
+
+## 多模态融合与跨模态
+
+### 276. 多模态预训练
+
+**运用场景：**
+- 视觉语言理解
+- 多模态检索
+- 跨模态生成
+- 通用AI
+
+**算法原理：**
+在大规模多模态数据上进行联合预训练，学习跨模态表示。
+
+**优缺点：**
+- 优点：跨模态理解、泛化能力强、zero-shot能力
+- 缺点：数据需求巨大、计算成本高、对齐困难
+
+**案例推荐：**
+- [多模态预训练教程](https://github.com/topics/multimodal-pretraining)
+- [视觉语言模型项目](https://github.com/topics/vision-language-pretraining)
+- [跨模态检索案例](https://www.kaggle.com/code/renshengbushexie/cross-modal-retrieval)
+- [多模态大模型项目](https://github.com/topics/multimodal-large-models)
+
+### 277. 音视频同步学习
+
+**运用场景：**
+- 音视频分析
+- 多媒体理解
+- 同步检测
+- 视听融合
+
+**算法原理：**
+学习音频和视频之间的时间同步关系和语义对应。
+
+**优缺点：**
+- 优点：多模态融合、时间同步、信息互补
+- 缺点：同步要求严格、数据处理复杂、计算开销大
+
+**案例推荐：**
+- [音视频同步教程](https://github.com/topics/audio-visual-synchronization)
+- [多媒体理解项目](https://github.com/topics/multimedia-understanding)
+- [视听融合案例](https://www.kaggle.com/code/renshengbushexie/audiovisual-fusion)
+- [同步检测项目](https://github.com/topics/synchronization-detection)
+
+### 278. 触觉与视觉融合
+
+**运用场景：**
+- 机器人感知
+- 虚拟现实
+- 医疗训练
+- 人机交互
+
+**算法原理：**
+融合触觉和视觉信息，实现更丰富的感知和交互。
+
+**优缺点：**
+- 优点：感知增强、交互自然、应用前景广
+- 缺点：硬件要求高、数据获取困难、标准不统一
+
+**案例推荐：**
+- [触觉视觉融合教程](https://github.com/topics/haptic-visual-fusion)
+- [机器人多感知项目](https://github.com/topics/robotic-multimodal-perception)
+- [虚拟现实触觉案例](https://www.kaggle.com/code/renshengbushexie/vr-haptic-feedback)
+- [医疗触觉训练项目](https://github.com/topics/medical-haptic-training)
+
+### 279. 嗅觉与其他感知融合
+
+**运用场景：**
+- 环境监测
+- 食品分析
+- 医疗诊断
+- 智能家居
+
+**算法原理：**
+将嗅觉传感器数据与其他模态信息融合，实现综合分析。
+
+**优缺点：**
+- 优点：感知维度扩展、应用独特、检测精确
+- 缺点：传感器技术限制、数据稀缺、标准化困难
+
+**案例推荐：**
+- [嗅觉感知融合教程](https://github.com/topics/olfactory-multimodal)
+- [环境监测项目](https://github.com/topics/environmental-sensing)
+- [食品质量检测案例](https://www.kaggle.com/code/renshengbushexie/food-quality-multimodal)
+- [医疗气味诊断项目](https://github.com/topics/medical-odor-diagnosis)
+
+### 280. 脑机接口多模态
+
+**运用场景：**
+- 神经解码
+- 意图识别
+- 辅助技术
+- 认知增强
+
+**算法原理：**
+融合脑电信号与其他生理信号，实现精确的意图解码。
+
+**优缺点：**
+- 优点：直接神经接口、意图精确、应用前景大
+- 缺点：信号复杂、个体差异大、伦理问题
+
+**案例推荐：**
+- [脑机接口教程](https://github.com/topics/brain-computer-interface)
+- [神经信号解码项目](https://github.com/topics/neural-signal-decoding)
+- [意图识别案例](https://www.kaggle.com/code/renshengbushexie/eeg-intent-recognition)
+- [辅助技术项目](https://github.com/topics/assistive-bci-technology)
+
+
