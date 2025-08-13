@@ -604,3 +604,654 @@
 - [系统发育树构建项目](https://github.com/topics/hierarchical-clustering-phylogeny)
 - [社交网络分析案例](https://www.kaggle.com/code/dansbecker/hierarchical-clustering-social)
 - [基因表达聚类项目](https://github.com/topics/hierarchical-clustering-genes)
+
+## 强化学习
+
+### 41. Q学习（Q-learning）
+
+**运用场景：**
+- 游戏AI
+- 机器人控制
+- 自动驾驶
+- 资源分配
+
+**算法原理：**
+通过学习状态-动作值函数Q(s,a)来找到最优策略，使用贝尔曼方程更新Q值。
+
+**优缺点：**
+- 优点：无模型学习、收敛性保证、简单易实现
+- 缺点：状态空间大时效率低、探索与利用平衡困难
+
+**案例推荐：**
+- [Q-learning教程](https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow)
+- [迷宫求解项目](https://github.com/topics/q-learning-maze)
+- [Taxi游戏案例](https://www.kaggle.com/code/dansbecker/q-learning-taxi)
+- [股票交易Q学习项目](https://github.com/topics/q-learning-trading)
+
+### 42. 深度Q网络（DQN）
+
+**运用场景：**
+- Atari游戏
+- 复杂控制任务
+- 高维状态空间问题
+- 机器人导航
+
+**算法原理：**
+使用深度神经网络来近似Q函数，解决高维状态空间问题。
+
+**优缺点：**
+- 优点：处理高维状态、端到端学习、突破性能
+- 缺点：训练不稳定、需要大量数据、超参数敏感
+
+**案例推荐：**
+- [DQN Atari游戏](https://github.com/topics/dqn-atari)
+- [CartPole平衡项目](https://github.com/topics/dqn-cartpole)
+- [Flappy Bird DQN案例](https://www.kaggle.com/code/dansbecker/dqn-flappy-bird)
+- [股票交易DQN项目](https://github.com/topics/dqn-stock-trading)
+
+### 43. 政策梯度（Policy Gradients）
+
+**运用场景：**
+- 连续动作空间
+- 策略优化
+- 机器人控制
+- 游戏AI
+
+**算法原理：**
+直接优化策略参数，使用梯度上升最大化期望回报。
+
+**优缺点：**
+- 优点：直接优化策略、处理连续动作、理论基础强
+- 缺点：高方差、样本效率低、训练不稳定
+
+**案例推荐：**
+- [策略梯度教程](https://github.com/topics/policy-gradient)
+- [连续控制项目](https://github.com/topics/policy-gradient-continuous)
+- [Pong游戏案例](https://www.kaggle.com/code/dansbecker/policy-gradient-pong)
+
+### 44. Actor-Critic方法
+
+**运用场景：**
+- 平衡策略和价值学习
+- 复杂环境控制
+- 多智能体系统
+- 机器人学习
+
+**算法原理：**
+结合策略梯度和价值函数学习，Actor更新策略，Critic评估状态价值。
+
+**优缺点：**
+- 优点：减少方差、结合两种方法优点、稳定性好
+- 缺点：两个网络训练、超参数多、实现复杂
+
+**案例推荐：**
+- [Actor-Critic教程](https://github.com/topics/actor-critic)
+- [LunarLander控制项目](https://github.com/topics/actor-critic-lunar)
+- [机器人控制案例](https://www.kaggle.com/code/dansbecker/actor-critic-robot)
+
+### 45. 深度确定性策略梯度（DDPG）
+
+**运用场景：**
+- 连续控制任务
+- 机器人操作
+- 自动驾驶
+- 工业控制
+
+**算法原理：**
+结合DQN和策略梯度，使用确定性策略处理连续动作空间。
+
+**优缺点：**
+- 优点：处理连续动作、样本效率高、性能稳定
+- 缺点：对超参数敏感、局部最优、训练困难
+
+**案例推荐：**
+- [DDPG教程](https://github.com/topics/ddpg)
+- [机械臂控制项目](https://github.com/topics/ddpg-robotic-arm)
+- [自动驾驶案例](https://www.kaggle.com/code/dansbecker/ddpg-autonomous-driving)
+
+### 46. 优势行动者-评论家（A2C）
+
+**运用场景：**
+- 同步并行训练
+- 游戏AI
+- 机器人控制
+- 资源管理
+
+**算法原理：**
+Actor-Critic的同步版本，使用优势函数减少方差。
+
+**优缺点：**
+- 优点：稳定训练、减少方差、并行效率高
+- 缺点：同步等待、计算资源需求大
+
+**案例推荐：**
+- [A2C实现教程](https://github.com/topics/a2c)
+- [Atari游戏A2C项目](https://github.com/topics/a2c-atari)
+- [连续控制案例](https://www.kaggle.com/code/dansbecker/a2c-continuous)
+
+### 47. 异步优势行动者-评论家（A3C）
+
+**运用场景：**
+- 异步并行训练
+- 大规模强化学习
+- 分布式系统
+- 快速学习
+
+**算法原理：**
+A2C的异步版本，多个worker并行采样和学习。
+
+**优缺点：**
+- 优点：异步高效、探索多样性、收敛快
+- 缺点：实现复杂、调试困难、资源协调
+
+**案例推荐：**
+- [A3C教程](https://github.com/topics/a3c)
+- [分布式训练项目](https://github.com/topics/a3c-distributed)
+- [游戏AI案例](https://www.kaggle.com/code/dansbecker/a3c-game-ai)
+
+### 48. 信任区域策略优化（TRPO）
+
+**运用场景：**
+- 策略优化
+- 安全强化学习
+- 机器人控制
+- 工业应用
+
+**算法原理：**
+通过限制策略更新步长来保证单调改进，使用信任区域约束。
+
+**优缺点：**
+- 优点：理论保证、单调改进、稳定性好
+- 缺点：计算复杂、实现困难、收敛慢
+
+**案例推荐：**
+- [TRPO实现](https://github.com/topics/trpo)
+- [机器人学习项目](https://github.com/topics/trpo-robotics)
+- [安全控制案例](https://www.kaggle.com/code/dansbecker/trpo-safety)
+
+### 49. 近端策略优化（PPO）
+
+**运用场景：**
+- 通用强化学习
+- 游戏AI
+- 机器人控制
+- 自动化系统
+
+**算法原理：**
+TRPO的简化版本，使用裁剪目标函数限制策略更新。
+
+**优缺点：**
+- 优点：实现简单、性能稳定、调参容易
+- 缺点：启发式方法、理论保证弱
+
+**案例推荐：**
+- [PPO教程](https://github.com/topics/ppo)
+- [OpenAI Gym项目合集](https://github.com/topics/ppo-openai-gym)
+- [多智能体PPO案例](https://www.kaggle.com/code/dansbecker/ppo-multi-agent)
+- [股票交易PPO项目](https://github.com/topics/ppo-stock-trading)
+
+### 50. 自我博弈学习（如AlphaGo）
+
+**运用场景：**
+- 棋类游戏（如AlphaGo）
+- 多智能体环境
+- 竞争性任务
+- 策略游戏
+
+**算法原理：**
+智能体通过与自己的副本对战来学习和改进策略，结合蒙特卡洛树搜索。
+
+**优缺点：**
+- 优点：无需人类数据、持续改进、突破人类水平
+- 缺点：计算资源需求大、训练时间长、环境特定
+
+**案例推荐：**
+- [AlphaGo Zero论文实现](https://github.com/junxiaosong/AlphaZero_Gomoku)
+- [象棋AI项目](https://github.com/topics/alphazero-chess)
+- [Go游戏AI案例](https://www.kaggle.com/code/dansbecker/alphago-self-play)
+- [多智能体自我博弈项目](https://github.com/topics/self-play-multi-agent)
+
+---
+
+## 深度学习
+
+### 51. 前馈神经网络（FNNs）
+
+**运用场景：**
+- 分类问题
+- 回归问题
+- 特征学习
+- 函数逼近
+
+**算法原理：**
+信息从输入层经过隐藏层传递到输出层，使用反向传播算法训练。
+
+**优缺点：**
+- 优点：万能近似器、灵活性强、可处理非线性
+- 缺点：容易过拟合、需要大量数据、局部最优问题
+
+**案例推荐：**
+- [神经网络基础教程](https://pytorch.org/tutorials/beginner/blitz/neural_networks_tutorial.html)
+- [手写数字识别项目](https://github.com/topics/feedforward-neural-network-mnist)
+- [回归问题案例](https://www.kaggle.com/code/dansbecker/feedforward-regression)
+- [分类任务项目](https://github.com/topics/feedforward-neural-network-classification)
+
+### 52. 卷积神经网络（CNNs）
+
+**运用场景：**
+- 图像分类
+- 目标检测
+- 图像分割
+- 医学图像分析
+
+**算法原理：**
+使用卷积层、池化层和全连接层来提取图像特征，具有平移不变性。
+
+**优缺点：**
+- 优点：参数共享、局部连接、平移不变性
+- 缺点：需要大量数据、计算资源消耗大、对旋转敏感
+
+**案例推荐：**
+- [CNN图像分类教程](https://pytorch.org/tutorials/beginner/blitz/cifar10_tutorial.html)
+- [猫狗分类项目](https://github.com/topics/cnn-cats-dogs)
+- [医学图像分析案例](https://www.kaggle.com/code/dansbecker/cnn-medical-imaging)
+- [交通标志识别项目](https://github.com/topics/cnn-traffic-signs)
+
+### 53. 循环神经网络（RNNs）
+
+**运用场景：**
+- 序列数据处理
+- 时间序列预测
+- 自然语言处理
+- 语音识别
+
+**算法原理：**
+具有记忆功能的神经网络，能处理变长序列数据。
+
+**优缺点：**
+- 优点：处理序列数据、记忆能力、灵活长度
+- 缺点：梯度消失、训练困难、长期依赖问题
+
+**案例推荐：**
+- [RNN序列预测教程](https://pytorch.org/tutorials/intermediate/char_rnn_classification_tutorial.html)
+- [股票价格预测项目](https://github.com/topics/rnn-stock-prediction)
+- [文本生成案例](https://www.kaggle.com/code/dansbecker/rnn-text-generation)
+- [语音识别项目](https://github.com/topics/rnn-speech-recognition)
+
+### 54. 长短时记忆网络（LSTM）
+
+**运用场景：**
+- 长序列建模
+- 自然语言处理
+- 机器翻译
+- 情感分析
+
+**算法原理：**
+通过门控机制解决RNN的梯度消失问题，能够学习长期依赖关系。
+
+**优缺点：**
+- 优点：解决长期依赖、梯度流稳定、性能优秀
+- 缺点：计算复杂、参数多、训练时间长
+
+**案例推荐：**
+- [LSTM文本分类教程](https://pytorch.org/tutorials/beginner/nlp/sequence_models_tutorial.html)
+- [机器翻译项目](https://github.com/topics/lstm-machine-translation)
+- [时间序列预测案例](https://www.kaggle.com/code/dansbecker/lstm-time-series)
+- [情感分析项目](https://github.com/topics/lstm-sentiment-analysis)
+
+### 55. 门控循环单元（GRU）
+
+**运用场景：**
+- 序列建模
+- 机器翻译
+- 语言模型
+- 推荐系统
+
+**算法原理：**
+简化的LSTM，使用更少的门控机制，减少参数量。
+
+**优缺点：**
+- 优点：参数少、训练快、性能接近LSTM
+- 缺点：表达能力略弱、新颖性不足
+
+**案例推荐：**
+- [GRU语言模型教程](https://pytorch.org/tutorials/intermediate/char_rnn_generation_tutorial.html)
+- [推荐系统项目](https://github.com/topics/gru-recommendation)
+- [序列分类案例](https://www.kaggle.com/code/dansbecker/gru-sequence-classification)
+- [对话系统项目](https://github.com/topics/gru-chatbot)
+
+### 56. 自注意力模型（Transformer）
+
+**运用场景：**
+- 机器翻译
+- 文本摘要
+- 问答系统
+- 语言模型
+
+**算法原理：**
+基于自注意力机制，能够并行处理序列数据，捕捉长距离依赖关系。
+
+**优缺点：**
+- 优点：并行计算、长距离依赖、性能优秀
+- 缺点：计算复杂度高、内存需求大、位置编码需求
+
+**案例推荐：**
+- [Transformer实现教程](https://pytorch.org/tutorials/beginner/transformer_tutorial.html)
+- [机器翻译项目](https://github.com/topics/transformer-translation)
+- [文本摘要案例](https://www.kaggle.com/code/dansbecker/transformer-summarization)
+- [BERT预训练项目](https://github.com/topics/transformer-bert)
+
+### 57. 生成对抗网络（GANs）
+
+**运用场景：**
+- 图像生成
+- 数据增强
+- 图像修复
+- 风格迁移
+
+**算法原理：**
+通过生成器和判别器的对抗训练来学习数据分布，生成逼真的假数据。
+
+**优缺点：**
+- 优点：生成质量高、无需标签、创新性强
+- 缺点：训练不稳定、模式崩塌、评估困难
+
+**案例推荐：**
+- [GAN教程](https://pytorch.org/tutorials/beginner/dcgan_faces_tutorial.html)
+- [人脸生成项目](https://github.com/topics/gan-face-generation)
+- [艺术作品生成案例](https://www.kaggle.com/code/dansbecker/gan-art-generation)
+- [数据增强项目](https://github.com/topics/gan-data-augmentation)
+
+### 58. 变分自编码器（VAEs）
+
+**运用场景：**
+- 数据生成
+- 降维
+- 异常检测
+- 半监督学习
+
+**算法原理：**
+学习数据的潜在表示分布，通过变分推断进行生成建模。
+
+**优缺点：**
+- 优点：理论基础强、稳定训练、连续潜在空间
+- 缺点：生成质量一般、KL散度可能消失
+
+**案例推荐：**
+- [VAE教程](https://pytorch.org/tutorials/intermediate/vae_tutorial.html)
+- [图像生成项目](https://github.com/topics/vae-image-generation)
+- [异常检测案例](https://www.kaggle.com/code/dansbecker/vae-anomaly-detection)
+- [半监督学习项目](https://github.com/topics/vae-semi-supervised)
+
+### 59. 深度置信网络（DBNs）
+
+**运用场景：**
+- 无监督特征学习
+- 预训练
+- 降维
+- 分类任务
+
+**算法原理：**
+多层受限玻尔兹曼机堆叠，逐层贪婪预训练。
+
+**优缺点：**
+- 优点：无监督预训练、特征学习能力强
+- 缺点：训练复杂、已被其他方法超越
+
+**案例推荐：**
+- [DBN实现教程](https://github.com/topics/deep-belief-network)
+- [手写数字识别项目](https://github.com/topics/dbn-mnist)
+- [特征学习案例](https://www.kaggle.com/code/dansbecker/dbn-feature-learning)
+
+### 60. 深度玻尔兹曼机（DBM）
+
+**运用场景：**
+- 概率建模
+- 特征学习
+- 协同过滤
+- 推荐系统
+
+**算法原理：**
+无向概率图模型的深度扩展，使用多层隐藏单元学习复杂分布。
+
+**优缺点：**
+- 优点：理论基础强、概率建模能力、无监督学习
+- 缺点：训练困难、推断复杂、已被其他方法超越
+
+**案例推荐：**
+- [DBM实现教程](https://github.com/topics/deep-boltzmann-machine)
+- [协同过滤项目](https://github.com/topics/dbm-collaborative-filtering)
+- [概率建模案例](https://www.kaggle.com/code/dansbecker/dbm-probabilistic-modeling)
+
+### 61. 残差网络（ResNet）
+
+**运用场景：**
+- 深度图像分类
+- 特征提取
+- 目标检测
+- 图像分割
+
+**算法原理：**
+通过残差连接解决深度网络训练问题，允许梯度直接流过跳跃连接。
+
+**优缺点：**
+- 优点：解决梯度消失、训练更深网络、性能优秀
+- 缺点：参数量大、计算复杂度高
+
+**案例推荐：**
+- [ResNet实现教程](https://pytorch.org/hub/pytorch_vision_resnet/)
+- [ImageNet分类项目](https://github.com/topics/resnet-imagenet)
+- [医学图像分析案例](https://www.kaggle.com/code/dansbecker/resnet-medical-imaging)
+- [目标检测项目](https://github.com/topics/resnet-object-detection)
+
+### 62. Inception网络
+
+**运用场景：**
+- 高效图像分类
+- 多尺度特征提取
+- 计算受限环境
+- 移动端应用
+
+**算法原理：**
+多分支卷积结构，并行捕捉不同尺度特征，提高计算效率。
+
+**优缺点：**
+- 优点：计算效率高、多尺度特征、参数少
+- 缺点：架构复杂、设计困难
+
+**案例推荐：**
+- [Inception网络教程](https://pytorch.org/hub/pytorch_vision_inception_v3/)
+- [图像分类项目](https://github.com/topics/inception-image-classification)
+- [特征提取案例](https://www.kaggle.com/code/dansbecker/inception-feature-extraction)
+- [迁移学习项目](https://github.com/topics/inception-transfer-learning)
+
+### 63. U-Net
+
+**运用场景：**
+- 医学图像分割
+- 语义分割
+- 生物图像分析
+- 卫星图像处理
+
+**算法原理：**
+编码器-解码器结构，带跳跃连接，保留细节信息进行精确分割。
+
+**优缺点：**
+- 优点：精确分割、保留细节、少量数据训练
+- 缺点：内存消耗大、计算复杂
+
+**案例推荐：**
+- [U-Net分割教程](https://github.com/topics/unet-segmentation)
+- [医学图像分割项目](https://github.com/topics/unet-medical-segmentation)
+- [卫星图像分析案例](https://www.kaggle.com/code/dansbecker/unet-satellite-segmentation)
+- [细胞分割项目](https://github.com/topics/unet-cell-segmentation)
+
+### 64. YOLO（实时对象检测）
+
+**运用场景：**
+- 实时目标检测
+- 视频分析
+- 自动驾驶
+- 安防监控
+
+**算法原理：**
+单阶段检测器，直接预测边界框和类别，实现实时检测。
+
+**优缺点：**
+- 优点：速度快、端到端训练、实时性好
+- 缺点：小目标检测困难、定位精度相对较低
+
+**案例推荐：**
+- [YOLO目标检测](https://github.com/ultralytics/yolov5)
+- [交通监控项目](https://github.com/topics/yolo-traffic-monitoring)
+- [行人检测案例](https://www.kaggle.com/code/dansbecker/yolo-pedestrian-detection)
+- [车辆检测项目](https://github.com/topics/yolo-vehicle-detection)
+
+### 65. Mask R-CNN（实例分割）
+
+**运用场景：**
+- 实例分割
+- 目标检测
+- 机器人视觉
+- 自动驾驶
+
+**算法原理：**
+在Faster R-CNN基础上添加分割分支，同时进行检测和分割。
+
+**优缺点：**
+- 优点：精确分割、同时检测和分割、性能优秀
+- 缺点：计算复杂度高、训练困难
+
+**案例推荐：**
+- [Mask R-CNN教程](https://github.com/matterport/Mask_RCNN)
+- [实例分割项目](https://github.com/topics/mask-rcnn-instance-segmentation)
+- [医学图像分析案例](https://www.kaggle.com/code/dansbecker/mask-rcnn-medical)
+- [自动驾驶项目](https://github.com/topics/mask-rcnn-autonomous-driving)
+
+### 66. Siamese网络（用于相似性学习）
+
+**运用场景：**
+- 人脸验证
+- 相似性度量
+- 一次性学习
+- 签名验证
+
+**算法原理：**
+双胞胎网络学习样本对的相似性，共享权重提取特征。
+
+**优缺点：**
+- 优点：少样本学习、相似性建模、泛化能力强
+- 缺点：需要配对数据、训练策略重要
+
+**案例推荐：**
+- [Siamese网络教程](https://github.com/topics/siamese-network)
+- [人脸验证项目](https://github.com/topics/siamese-face-verification)
+- [签名识别案例](https://www.kaggle.com/code/dansbecker/siamese-signature-verification)
+- [一次性学习项目](https://github.com/topics/siamese-one-shot-learning)
+
+### 67. Triplet网络（用于相似性学习）
+
+**运用场景：**
+- 度量学习
+- 人脸识别
+- 图像检索
+- 嵌入学习
+
+**算法原理：**
+通过三元组损失学习嵌入空间，使相似样本靠近，不相似样本远离。
+
+**优缺点：**
+- 优点：学习良好嵌入、相似性度量精确
+- 缺点：三元组选择困难、训练复杂
+
+**案例推荐：**
+- [Triplet网络实现](https://github.com/topics/triplet-network)
+- [人脸识别项目](https://github.com/topics/triplet-face-recognition)
+- [图像检索案例](https://www.kaggle.com/code/dansbecker/triplet-image-retrieval)
+- [商品推荐项目](https://github.com/topics/triplet-product-recommendation)
+
+### 68. 多任务学习网络
+
+**运用场景：**
+- 相关任务联合学习
+- 资源共享
+- 迁移学习
+- 多模态学习
+
+**算法原理：**
+共享表示学习多个相关任务，通过任务间的相互促进提高性能。
+
+**优缺点：**
+- 优点：提高泛化能力、资源利用高效、知识共享
+- 缺点：任务冲突、权重平衡困难
+
+**案例推荐：**
+- [多任务学习教程](https://github.com/topics/multi-task-learning)
+- [自然语言处理项目](https://github.com/topics/multitask-nlp)
+- [计算机视觉案例](https://www.kaggle.com/code/dansbecker/multitask-computer-vision)
+- [推荐系统项目](https://github.com/topics/multitask-recommendation)
+
+### 69. 迁移学习和微调模型
+
+**运用场景：**
+- 小数据集
+- 领域适应
+- 快速原型开发
+- 资源受限环境
+
+**算法原理：**
+利用预训练模型进行迁移，通过微调适应新任务。
+
+**优缺点：**
+- 优点：减少训练时间、提高性能、少样本学习
+- 缺点：领域差异影响、微调策略重要
+
+**案例推荐：**
+- [迁移学习教程](https://pytorch.org/tutorials/beginner/transfer_learning_tutorial.html)
+- [图像分类项目](https://github.com/topics/transfer-learning-image-classification)
+- [自然语言处理案例](https://www.kaggle.com/code/dansbecker/transfer-learning-nlp)
+- [医学图像分析项目](https://github.com/topics/transfer-learning-medical)
+
+### 70. 神经样式转换
+
+**运用场景：**
+- 艺术创作
+- 图像风格化
+- 创意设计
+- 娱乐应用
+
+**算法原理：**
+分离并重组内容和风格特征，使用CNN的不同层表示。
+
+**优缺点：**
+- 优点：艺术效果好、创意性强、应用广泛
+- 缺点：计算耗时、风格限制
+
+**案例推荐：**
+- [神经样式转换教程](https://pytorch.org/tutorials/advanced/neural_style_tutorial.html)
+- [艺术风格化项目](https://github.com/topics/neural-style-transfer)
+- [实时风格转换案例](https://www.kaggle.com/code/dansbecker/real-time-style-transfer)
+- [视频风格化项目](https://github.com/topics/video-style-transfer)
+
+### 71. 循环生成对抗网络（CycleGAN）
+
+**运用场景：**
+- 图像风格转换
+- 领域适应
+- 数据增强
+- 图像修复
+
+**算法原理：**
+无配对数据的图像翻译，使用循环一致性损失保证转换质量。
+
+**优缺点：**
+- 优点：无需配对数据、双向转换、应用广泛
+- 缺点：训练不稳定、可能产生伪影
+
+**案例推荐：**
+- [CycleGAN教程](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix)
+- [图像风格转换项目](https://github.com/topics/cyclegan-style-transfer)
+- [季节转换案例](https://www.kaggle.com/code/dansbecker/cyclegan-season-transfer)
+- [医学图像增强项目](https://github.com/topics/cyclegan-medical-imaging)
+
+---
