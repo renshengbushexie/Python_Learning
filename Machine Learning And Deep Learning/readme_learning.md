@@ -1868,3 +1868,1048 @@ ID3的改进，使用信息增益比，能处理连续特征和缺失值。
 - [知识图谱嵌入项目](https://github.com/topics/gnn-knowledge-graph)
 
 ---
+## 时间序列算法
+
+### 101. ARIMA（自回归移动平均模型）
+
+**运用场景：**
+- 股票价格预测
+- 销售预测
+- 经济指标预测
+- 天气预报
+
+**算法原理：**
+结合自回归（AR）、差分（I）和移动平均（MA）三个组件，建模时间序列的趋势和季节性。
+
+**优缺点：**
+- 优点：理论基础强、可解释性好、经典方法
+- 缺点：需要平稳性、参数选择困难、线性假设
+
+**案例推荐：**
+- [ARIMA时间序列预测教程](https://github.com/topics/arima-time-series)
+- [股票价格预测项目](https://github.com/topics/arima-stock-prediction)
+- [销售预测案例](https://www.kaggle.com/code/dansbecker/arima-sales-forecast)
+
+### 102. SARIMA（季节性ARIMA）
+
+**运用场景：**
+- 季节性销售预测
+- 能源消耗预测
+- 旅游需求预测
+- 农业产量预测
+
+**算法原理：**
+ARIMA的扩展，添加季节性组件处理周期性模式。
+
+**优缺点：**
+- 优点：处理季节性、扩展性好
+- 缺点：参数多、复杂度高
+
+**案例推荐：**
+- [SARIMA季节性预测](https://github.com/topics/sarima-seasonal)
+- [能源预测项目](https://github.com/topics/sarima-energy-forecast)
+
+### 103. Prophet
+
+**运用场景：**
+- 业务指标预测
+- 用户增长预测
+- 广告效果预测
+- 异常检测
+
+**算法原理：**
+Facebook开发的时间序列预测工具，基于加性模型，处理趋势、季节性和假日效应。
+
+**优缺点：**
+- 优点：自动化程度高、处理缺失值、解释性强
+- 缺点：对短时间序列效果一般、参数调优有限
+
+**案例推荐：**
+- [Prophet预测教程](https://github.com/facebook/prophet)
+- [业务指标预测项目](https://github.com/topics/prophet-business-forecast)
+- [用户增长分析案例](https://www.kaggle.com/code/dansbecker/prophet-growth-analysis)
+
+### 104. LSTM时间序列
+
+**运用场景：**
+- 复杂时间序列预测
+- 多变量时间序列
+- 长期依赖建模
+- 实时预测系统
+
+**算法原理：**
+使用LSTM网络捕捉时间序列中的长期依赖关系和非线性模式。
+
+**优缺点：**
+- 优点：处理非线性、长期依赖、多变量
+- 缺点：需要大量数据、黑盒模型、训练困难
+
+**案例推荐：**
+- [LSTM时间序列教程](https://github.com/topics/lstm-time-series)
+- [股票预测项目](https://github.com/topics/lstm-stock-prediction)
+- [天气预报案例](https://www.kaggle.com/code/dansbecker/lstm-weather-forecast)
+
+### 105. Transformer时间序列
+
+**运用场景：**
+- 长序列预测
+- 多维时间序列
+- 实时预测
+- 异常检测
+
+**算法原理：**
+使用Transformer架构处理时间序列，利用自注意力机制捕捉长距离依赖。
+
+**优缺点：**
+- 优点：并行处理、长距离依赖、注意力可视化
+- 缺点：计算复杂、需要大量数据
+
+**案例推荐：**
+- [Transformer时间序列](https://github.com/topics/transformer-time-series)
+- [多变量预测项目](https://github.com/topics/transformer-multivariate)
+
+---
+
+## 异常检测算法
+
+### 106. Isolation Forest（孤立森林）
+
+**运用场景：**
+- 欺诈检测
+- 网络安全
+- 质量控制
+- 设备故障检测
+
+**算法原理：**
+通过随机选择特征和分割值构建树，异常点更容易被孤立，路径更短。
+
+**优缺点：**
+- 优点：无需标签、线性时间复杂度、处理高维数据
+- 缺点：对正常数据密度敏感、参数选择
+
+**案例推荐：**
+- [Isolation Forest教程](https://scikit-learn.org/stable/modules/outlier_detection.html#isolation-forest)
+- [信用卡欺诈检测项目](https://github.com/topics/isolation-forest-fraud)
+- [网络入侵检测案例](https://www.kaggle.com/code/dansbecker/isolation-forest-intrusion)
+
+### 107. One-Class SVM
+
+**运用场景：**
+- 新颖性检测
+- 质量控制
+- 医疗异常检测
+- 工业监控
+
+**算法原理：**
+训练时只使用正常样本，学习正常数据的边界，超出边界的视为异常。
+
+**优缺点：**
+- 优点：理论基础强、适合高维数据、核技巧
+- 缺点：参数敏感、计算复杂、需要调参
+
+**案例推荐：**
+- [One-Class SVM教程](https://scikit-learn.org/stable/modules/outlier_detection.html#one-class-svm)
+- [设备故障检测项目](https://github.com/topics/one-class-svm-fault)
+- [医疗异常检测案例](https://www.kaggle.com/code/dansbecker/one-class-svm-medical)
+
+### 108. Local Outlier Factor (LOF)
+
+**运用场景：**
+- 局部异常检测
+- 数据清洗
+- 质量控制
+- 社交网络分析
+
+**算法原理：**
+基于局部密度的异常检测，计算每个点相对于其邻域的异常程度。
+
+**优缺点：**
+- 优点：检测局部异常、不需要全局假设、可解释性
+- 缺点：对参数敏感、计算复杂度高
+
+**案例推荐：**
+- [LOF异常检测教程](https://scikit-learn.org/stable/modules/outlier_detection.html#local-outlier-factor)
+- [数据清洗项目](https://github.com/topics/lof-data-cleaning)
+- [社交网络异常检测案例](https://www.kaggle.com/code/dansbecker/lof-social-network)
+
+### 109. Elliptic Envelope
+
+**运用场景：**
+- 高斯分布数据异常检测
+- 金融风险监控
+- 传感器数据监控
+- 质量控制
+
+**算法原理：**
+假设正常数据服从多元高斯分布，通过协方差估计确定异常边界。
+
+**优缺点：**
+- 优点：简单快速、理论基础、适合高斯数据
+- 缺点：高斯假设、对异常值敏感
+
+**案例推荐：**
+- [Elliptic Envelope教程](https://scikit-learn.org/stable/modules/outlier_detection.html#elliptic-envelope)
+- [传感器监控项目](https://github.com/topics/elliptic-envelope-sensor)
+
+### 110. DBSCAN异常检测
+
+**运用场景：**
+- 密度异常检测
+- 图像处理
+- 地理数据分析
+- 网络分析
+
+**算法原理：**
+将不属于任何簇的点标记为噪声/异常点。
+
+**优缺点：**
+- 优点：发现任意形状异常、不需要预设异常数量
+- 缺点：参数敏感、密度变化处理困难
+
+**案例推荐：**
+- [DBSCAN异常检测](https://github.com/topics/dbscan-anomaly-detection)
+- [地理数据异常检测项目](https://github.com/topics/dbscan-geo-anomaly)
+
+---
+
+## 因果推断算法
+
+### 111. Instrumental Variables (IV)
+
+**运用场景：**
+- 经济学研究
+- 医疗效果评估
+- 政策评估
+- A/B测试分析
+
+**算法原理：**
+使用工具变量解决内生性问题，估计因果效应。
+
+**优缺点：**
+- 优点：处理内生性、因果推断
+- 缺点：工具变量难找、假设严格
+
+**案例推荐：**
+- [工具变量教程](https://github.com/topics/instrumental-variables)
+- [经济学因果推断项目](https://github.com/topics/iv-economics)
+
+### 112. Propensity Score Matching
+
+**运用场景：**
+- 医疗效果评估
+- 教育政策评估
+- 营销效果分析
+- 观察性研究
+
+**算法原理：**
+通过倾向性分数匹配，构建平衡的对照组进行因果推断。
+
+**优缺点：**
+- 优点：平衡协变量、直观易懂
+- 缺点：隐藏偏差、匹配质量依赖
+
+**案例推荐：**
+- [倾向性分数匹配教程](https://github.com/topics/propensity-score-matching)
+- [医疗效果评估项目](https://github.com/topics/psm-medical-treatment)
+- [教育政策评估案例](https://www.kaggle.com/code/dansbecker/propensity-score-education)
+
+### 113. Difference-in-Differences (DID)
+
+**运用场景：**
+- 政策效果评估
+- 自然实验
+- 经济学研究
+- 社会科学研究
+
+**算法原理：**
+比较处理组和对照组在政策实施前后的差异变化。
+
+**优缺点：**
+- 优点：控制时间不变因素、自然实验设计
+- 缺点：平行趋势假设、外部有效性
+
+**案例推荐：**
+- [双重差分教程](https://github.com/topics/difference-in-differences)
+- [政策评估项目](https://github.com/topics/did-policy-evaluation)
+- [经济学研究案例](https://www.kaggle.com/code/dansbecker/did-economic-analysis)
+
+### 114. Regression Discontinuity Design (RDD)
+
+**运用场景：**
+- 教育政策评估
+- 医疗干预评估
+- 福利政策分析
+- 选举研究
+
+**算法原理：**
+利用分配规则的不连续性识别因果效应。
+
+**优缺点：**
+- 优点：局部随机化、可信度高
+- 缺点：局部效应、带宽选择
+
+**案例推荐：**
+- [断点回归教程](https://github.com/topics/regression-discontinuity)
+- [教育政策分析项目](https://github.com/topics/rdd-education)
+
+### 115. Causal Forests
+
+**运用场景：**
+- 异质性处理效应
+- 个性化医疗
+- 精准营销
+- 政策个性化
+
+**算法原理：**
+随机森林的因果推断扩展，估计异质性处理效应。
+
+**优缺点：**
+- 优点：估计异质性效应、机器学习方法
+- 缺点：解释性相对较差、实现复杂
+
+**案例推荐：**
+- [因果森林教程](https://github.com/grf-labs/grf)
+- [个性化医疗项目](https://github.com/topics/causal-forest-personalized)
+
+---
+
+## 元学习算法
+
+### 116. Model-Agnostic Meta-Learning (MAML)
+
+**运用场景：**
+- 快速适应新任务
+- 少样本学习
+- 个性化推荐
+- 机器人学习
+
+**算法原理：**
+学习一个好的初始化参数，使模型能够快速适应新任务。
+
+**优缺点：**
+- 优点：模型无关、快速适应、理论基础
+- 缺点：二阶梯度、计算复杂、实现困难
+
+**案例推荐：**
+- [MAML元学习教程](https://github.com/topics/maml-meta-learning)
+- [少样本学习项目](https://github.com/topics/maml-few-shot)
+- [机器人学习案例](https://www.kaggle.com/code/dansbecker/maml-robotics)
+
+### 117. Prototypical Networks
+
+**运用场景：**
+- 少样本分类
+- 图像识别
+- 文本分类
+- 医疗诊断
+
+**算法原理：**
+学习每个类别的原型表示，通过距离度量进行分类。
+
+**优缺点：**
+- 优点：简单有效、可解释性、少样本
+- 缺点：欧几里得假设、类别平衡
+
+**案例推荐：**
+- [原型网络教程](https://github.com/topics/prototypical-networks)
+- [少样本图像分类项目](https://github.com/topics/prototypical-few-shot)
+- [医疗图像分类案例](https://www.kaggle.com/code/dansbecker/prototypical-medical)
+
+### 118. Memory-Augmented Networks
+
+**运用场景：**
+- 持续学习
+- 问答系统
+- 序列建模
+- 知识存储
+
+**算法原理：**
+增加外部记忆模块，增强神经网络的记忆和推理能力。
+
+**优缺点：**
+- 优点：长期记忆、知识存储、灵活性
+- 缺点：复杂度高、内存管理、训练困难
+
+**案例推荐：**
+- [记忆增强网络教程](https://github.com/topics/memory-augmented-networks)
+- [问答系统项目](https://github.com/topics/mann-question-answering)
+
+### 119. Learning to Learn
+
+**运用场景：**
+- 自动化机器学习
+- 超参数优化
+- 神经架构搜索
+- 快速适应
+
+**算法原理：**
+学习学习算法本身，自动化机器学习过程。
+
+**优缺点：**
+- 优点：自动化、通用性、适应性
+- 缺点：元复杂度、计算成本
+
+**案例推荐：**
+- [学习学习教程](https://github.com/topics/learning-to-learn)
+- [AutoML项目](https://github.com/topics/learning-to-learn-automl)
+
+---
+
+## 联邦学习算法
+
+### 120. FedAvg（联邦平均）
+
+**运用场景：**
+- 分布式机器学习
+- 隐私保护学习
+- 移动设备学习
+- 跨机构合作
+
+**算法原理：**
+客户端本地训练，服务器聚合模型参数，保护数据隐私。
+
+**优缺点：**
+- 优点：隐私保护、分布式、通信高效
+- 缺点：非IID数据、通信成本、收敛性
+
+**案例推荐：**
+- [联邦学习教程](https://github.com/topics/federated-learning)
+- [移动设备学习项目](https://github.com/topics/fedavg-mobile)
+- [医疗数据联邦学习案例](https://www.kaggle.com/code/dansbecker/federated-learning-medical)
+
+### 121. FedProx
+
+**运用场景：**
+- 异构设备联邦学习
+- 非IID数据
+- 系统异构性
+- 鲁棒联邦学习
+
+**算法原理：**
+FedAvg的改进版本，添加近端项处理系统和数据异构性。
+
+**优缺点：**
+- 优点：处理异构性、更稳定、理论保证
+- 缺点：超参数调优、计算开销
+
+**案例推荐：**
+- [FedProx实现](https://github.com/topics/fedprox)
+- [异构设备学习项目](https://github.com/topics/fedprox-heterogeneous)
+
+### 122. Differential Privacy in FL
+
+**运用场景：**
+- 隐私保护强化
+- 敏感数据学习
+- 金融数据分析
+- 医疗数据协作
+
+**算法原理：**
+在联邦学习中添加差分隐私机制，进一步保护数据隐私。
+
+**优缺点：**
+- 优点：强隐私保证、理论基础、可量化
+- 缺点：精度损失、噪声影响、参数选择
+
+**案例推荐：**
+- [差分隐私联邦学习](https://github.com/topics/differential-privacy-federated)
+- [金融隐私保护项目](https://github.com/topics/dp-fl-finance)
+
+---
+
+## 神经架构搜索
+
+### 123. DARTS（可微分架构搜索）
+
+**运用场景：**
+- 自动化神经网络设计
+- 架构优化
+- 高效搜索
+- 资源受限环境
+
+**算法原理：**
+使用梯度下降搜索神经网络架构，将离散搜索问题连续化。
+
+**优缺点：**
+- 优点：高效搜索、可微分、内存友好
+- 缺点：搜索空间限制、局部最优
+
+**案例推荐：**
+- [DARTS架构搜索教程](https://github.com/topics/darts-nas)
+- [图像分类NAS项目](https://github.com/topics/darts-image-classification)
+- [语义分割NAS案例](https://www.kaggle.com/code/dansbecker/darts-semantic-segmentation)
+
+### 124. Progressive NAS
+
+**运用场景：**
+- 大规模架构搜索
+- 渐进式优化
+- 计算效率
+- 复杂任务架构设计
+
+**算法原理：**
+逐步增加网络复杂度，从简单架构开始渐进式搜索。
+
+**优缺点：**
+- 优点：计算效率、渐进式、稳定性
+- 缺点：搜索策略复杂、时间较长
+
+**案例推荐：**
+- [Progressive NAS实现](https://github.com/topics/progressive-nas)
+- [大规模图像分类项目](https://github.com/topics/progressive-nas-imagenet)
+
+### 125. EfficientNet NAS
+
+**运用场景：**
+- 高效网络设计
+- 移动端部署
+- 资源约束优化
+- 精度效率平衡
+
+**算法原理：**
+通过复合缩放方法，同时优化网络深度、宽度和分辨率。
+
+**优缺点：**
+- 优点：高效设计、可扩展、性能优秀
+- 缺点：搜索空间特定、迁移性有限
+
+**案例推荐：**
+- [EfficientNet教程](https://github.com/topics/efficientnet)
+- [移动端部署项目](https://github.com/topics/efficientnet-mobile)
+- [模型压缩案例](https://www.kaggle.com/code/dansbecker/efficientnet-compression)
+
+---
+
+## 可解释AI算法
+
+### 126. LIME（局部可解释模型无关解释）
+
+**运用场景：**
+- 模型解释
+- 决策支持
+- 合规性检查
+- 偏见检测
+
+**算法原理：**
+在局部用简单模型近似复杂模型，解释单个预测。
+
+**优缺点：**
+- 优点：模型无关、局部解释、直观
+- 缺点：不稳定、采样依赖、局部性限制
+
+**案例推荐：**
+- [LIME解释教程](https://github.com/marcotcr/lime)
+- [图像分类解释项目](https://github.com/topics/lime-image-explanation)
+- [文本分类解释案例](https://www.kaggle.com/code/dansbecker/lime-text-explanation)
+- [表格数据解释项目](https://github.com/topics/lime-tabular-data)
+
+### 127. SHAP（SHapley Additive exPlanations）
+
+**运用场景：**
+- 特征重要性分析
+- 模型解释
+- 偏见检测
+- 业务决策支持
+
+**算法原理：**
+基于博弈论Shapley值，为每个特征分配贡献值。
+
+**优缺点：**
+- 优点：理论基础强、一致性、可加性
+- 缺点：计算复杂、近似误差
+
+**案例推荐：**
+- [SHAP解释教程](https://github.com/slundberg/shap)
+- [金融模型解释项目](https://github.com/topics/shap-finance)
+- [医疗诊断解释案例](https://www.kaggle.com/code/dansbecker/shap-medical-explanation)
+- [机器学习解释项目](https://github.com/topics/shap-ml-interpretation)
+
+### 128. Integrated Gradients
+
+**运用场景：**
+- 深度学习解释
+- 图像分类解释
+- 文本情感分析解释
+- 神经网络可视化
+
+**算法原理：**
+通过积分梯度计算输入特征对输出的贡献。
+
+**优缺点：**
+- 优点：满足公理、路径独立、理论基础
+- 缺点：基线选择、计算成本
+
+**案例推荐：**
+- [Integrated Gradients教程](https://github.com/topics/integrated-gradients)
+- [图像分类解释项目](https://github.com/topics/integrated-gradients-image)
+- [NLP模型解释案例](https://www.kaggle.com/code/dansbecker/integrated-gradients-nlp)
+
+### 129. Attention Visualization
+
+**运用场景：**
+- Transformer模型解释
+- 机器翻译解释
+- 文档分析
+- 模型调试
+
+**算法原理：**
+可视化注意力权重，展示模型关注的输入部分。
+
+**优缺点：**
+- 优点：直观可视化、模型内在机制、易于理解
+- 缺点：注意力≠解释、多头复杂性
+
+**案例推荐：**
+- [注意力可视化教程](https://github.com/topics/attention-visualization)
+- [BERT可视化项目](https://github.com/topics/bert-attention-visualization)
+- [机器翻译可视化案例](https://www.kaggle.com/code/dansbecker/attention-translation-viz)
+
+### 130. Counterfactual Explanations
+
+**运用场景：**
+- 决策支持
+- 公平性分析
+- 模型调试
+- 用户指导
+
+**算法原理：**
+生成反事实样本，展示改变哪些特征可以得到不同的预测结果。
+
+**优缺点：**
+- 优点：可操作性强、直观理解、公平性分析
+- 缺点：生成困难、现实性约束
+
+**案例推荐：**
+- [反事实解释教程](https://github.com/topics/counterfactual-explanations)
+- [贷款决策解释项目](https://github.com/topics/counterfactual-loan-decisions)
+- [招聘公平性分析案例](https://www.kaggle.com/code/dansbecker/counterfactual-hiring)
+
+---
+
+## 量子机器学习
+
+### 131. Quantum Neural Networks
+
+**运用场景：**
+- 量子计算优势
+- 复杂优化问题
+- 量子数据处理
+- 未来计算paradigm
+
+**算法原理：**
+利用量子比特和量子门构建神经网络，利用量子并行性。
+
+**优缺点：**
+- 优点：量子优势、并行性、新paradigm
+- 缺点：硬件限制、噪声、实用性有限
+
+**案例推荐：**
+- [量子神经网络教程](https://github.com/topics/quantum-neural-networks)
+- [Qiskit机器学习项目](https://github.com/Qiskit/qiskit-machine-learning)
+- [量子分类案例](https://www.kaggle.com/code/dansbecker/quantum-classification)
+
+### 132. Variational Quantum Algorithms
+
+**运用场景：**
+- 量子优化
+- 量子机器学习
+- 化学模拟
+- 材料科学
+
+**算法原理：**
+结合经典和量子计算，使用变分方法优化量子电路。
+
+**优缺点：**
+- 优点：NISQ时代可行、混合算法、实用性
+- 缺点：局部最优、barren plateau、噪声敏感
+
+**案例推荐：**
+- [变分量子算法教程](https://github.com/topics/variational-quantum-algorithms)
+- [QAOA优化项目](https://github.com/topics/qaoa-optimization)
+
+### 133. Quantum Support Vector Machines
+
+**运用场景：**
+- 量子分类
+- 高维数据处理
+- 量子特征映射
+- 核方法增强
+
+**算法原理：**
+使用量子计算加速SVM的核计算和优化过程。
+
+**优缺点：**
+- 优点：量子加速、高维处理、理论基础
+- 缺点：硬件要求、实现复杂、当前限制
+
+**案例推荐：**
+- [量子SVM教程](https://github.com/topics/quantum-svm)
+- [量子核方法项目](https://github.com/topics/quantum-kernel-methods)
+
+---
+
+## 进化计算算法
+
+### 134. Genetic Algorithm（遗传算法）
+
+**运用场景：**
+- 优化问题
+- 特征选择
+- 神经网络进化
+- 调度问题
+
+**算法原理：**
+模拟生物进化过程，通过选择、交叉、变异操作优化解。
+
+**优缺点：**
+- 优点：全局搜索、不需要梯度、灵活性强
+- 缺点：收敛慢、参数多、计算成本高
+
+**案例推荐：**
+- [遗传算法教程](https://github.com/topics/genetic-algorithm)
+- [特征选择项目](https://github.com/topics/genetic-algorithm-feature-selection)
+- [神经网络进化案例](https://www.kaggle.com/code/dansbecker/genetic-algorithm-neural-evolution)
+- [TSP问题求解项目](https://github.com/topics/genetic-algorithm-tsp)
+
+### 135. Particle Swarm Optimization (PSO)
+
+**运用场景：**
+- 连续优化
+- 超参数优化
+- 神经网络训练
+- 工程设计
+
+**算法原理：**
+模拟鸟群觅食行为，粒子根据个体和群体经验更新位置。
+
+**优缺点：**
+- 优点：简单实现、收敛快、参数少
+- 缺点：易陷入局部最优、维度敏感
+
+**案例推荐：**
+- [粒子群算法教程](https://github.com/topics/particle-swarm-optimization)
+- [超参数优化项目](https://github.com/topics/pso-hyperparameter-optimization)
+- [函数优化案例](https://www.kaggle.com/code/dansbecker/pso-function-optimization)
+
+### 136. Differential Evolution
+
+**运用场景：**
+- 全局优化
+- 机器学习调参
+- 工程优化
+- 多目标优化
+
+**算法原理：**
+通过差分变异和选择操作进化种群，优化目标函数。
+
+**优缺点：**
+- 优点：简单有效、少参数、鲁棒性强
+- 缺点：收敛速度、维度局限
+
+**案例推荐：**
+- [差分进化教程](https://github.com/topics/differential-evolution)
+- [机器学习优化项目](https://github.com/topics/differential-evolution-ml)
+- [多目标优化案例](https://www.kaggle.com/code/dansbecker/differential-evolution-multiobjective)
+
+### 137. Evolution Strategies
+
+**运用场景：**
+- 强化学习
+- 神经网络优化
+- 黑盒优化
+- 机器人控制
+
+**算法原理：**
+专注于连续参数优化的进化算法，使用正态分布变异。
+
+**优缺点：**
+- 优点：适合连续优化、并行性好、理论基础
+- 缺点：高维困难、参数敏感
+
+**案例推荐：**
+- [进化策略教程](https://github.com/topics/evolution-strategies)
+- [强化学习优化项目](https://github.com/topics/evolution-strategies-rl)
+- [神经网络进化案例](https://www.kaggle.com/code/dansbecker/evolution-strategies-neural)
+
+---
+
+## 图像生成与编辑
+
+### 138. StyleGAN
+
+**运用场景：**
+- 高质量人脸生成
+- 图像编辑
+- 数据增强
+- 创意设计
+
+**算法原理：**
+基于样式的生成器架构，通过样式向量控制图像生成的不同层面。
+
+**优缺点：**
+- 优点：高质量生成、可控性强、样式解耦
+- 缺点：训练困难、计算成本高、模式崩塌
+
+**案例推荐：**
+- [StyleGAN教程](https://github.com/NVlabs/stylegan3)
+- [人脸生成项目](https://github.com/topics/stylegan-face-generation)
+- [图像编辑案例](https://www.kaggle.com/code/dansbecker/stylegan-image-editing)
+- [艺术创作项目](https://github.com/topics/stylegan-art-generation)
+
+### 139. Diffusion Models
+
+**运用场景：**
+- 图像生成
+- 图像修复
+- 超分辨率
+- 条件生成
+
+**算法原理：**
+通过逐步去噪过程生成图像，从噪声开始逐步恢复数据。
+
+**优缺点：**
+- 优点：生成质量高、训练稳定、多样性好
+- 缺点：采样慢、计算成本高
+
+**案例推荐：**
+- [扩散模型教程](https://github.com/topics/diffusion-models)
+- [Stable Diffusion项目](https://github.com/CompVis/stable-diffusion)
+- [图像修复案例](https://www.kaggle.com/code/dansbecker/diffusion-image-inpainting)
+- [文本到图像项目](https://github.com/topics/text-to-image-diffusion)
+
+### 140. DALL-E
+
+**运用场景：**
+- 文本到图像生成
+- 创意设计
+- 内容创作
+- 概念可视化
+
+**算法原理：**
+基于Transformer的文本到图像生成模型，理解文本描述并生成对应图像。
+
+**优缺点：**
+- 优点：文本理解强、创意性高、通用性好
+- 缺点：计算成本极高、训练复杂
+
+**案例推荐：**
+- [DALL-E复现项目](https://github.com/topics/dalle-reproduction)
+- [文本图像生成案例](https://www.kaggle.com/code/dansbecker/dalle-text-to-image)
+- [创意设计项目](https://github.com/topics/dalle-creative-design)
+
+### 141. Image-to-Image Translation
+
+**运用场景：**
+- 域转换
+- 图像风格化
+- 图像增强
+- 数据增强
+
+**算法原理：**
+学习不同图像域之间的映射关系，实现图像转换。
+
+**优缺点：**
+- 优点：应用广泛、效果显著、创意性强
+- 缺点：需要配对数据、质量依赖数据
+
+**案例推荐：**
+- [Pix2Pix教程](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix)
+- [图像风格转换项目](https://github.com/topics/image-to-image-translation)
+- [医学图像转换案例](https://www.kaggle.com/code/dansbecker/medical-image-translation)
+
+---
+
+## 多模态学习
+
+### 142. CLIP (Contrastive Language-Image Pre-training)
+
+**运用场景：**
+- 图像文本理解
+- 零样本分类
+- 图像检索
+- 多模态搜索
+
+**算法原理：**
+通过对比学习联合训练图像和文本编码器，学习多模态表示。
+
+**优缺点：**
+- 优点：零样本能力、多模态理解、泛化性强
+- 缺点：需要大规模数据、计算成本高
+
+**案例推荐：**
+- [CLIP教程](https://github.com/openai/CLIP)
+- [零样本分类项目](https://github.com/topics/clip-zero-shot)
+- [图像检索案例](https://www.kaggle.com/code/dansbecker/clip-image-retrieval)
+- [多模态搜索项目](https://github.com/topics/clip-multimodal-search)
+
+### 143. Vision-Language Models
+
+**运用场景：**
+- 图像描述
+- 视觉问答
+- 多模态对话
+- 内容理解
+
+**算法原理：**
+结合视觉和语言理解，处理图像和文本的联合任务。
+
+**优缺点：**
+- 优点：跨模态理解、任务多样性、实用性强
+- 缺点：模型复杂、训练困难、数据需求大
+
+**案例推荐：**
+- [视觉语言模型教程](https://github.com/topics/vision-language-models)
+- [图像描述项目](https://github.com/topics/image-captioning)
+- [视觉问答案例](https://www.kaggle.com/code/dansbecker/visual-question-answering)
+- [多模态对话项目](https://github.com/topics/multimodal-dialogue)
+
+### 144. Audio-Visual Learning
+
+**运用场景：**
+- 音视频同步
+- 语音视觉识别
+- 多媒体分析
+- 听觉视觉融合
+
+**算法原理：**
+同时处理音频和视频信息，学习跨模态的关联和表示。
+
+**优缺点：**
+- 优点：信息互补、鲁棒性强、应用广泛
+- 缺点：同步要求、复杂度高、数据处理困难
+
+**案例推荐：**
+- [音视频学习教程](https://github.com/topics/audio-visual-learning)
+- [语音视觉识别项目](https://github.com/topics/audio-visual-speech-recognition)
+- [多媒体分析案例](https://www.kaggle.com/code/dansbecker/audio-visual-analysis)
+
+---
+
+## 压缩与加速算法
+
+### 145. Knowledge Distillation
+
+**运用场景：**
+- 模型压缩
+- 移动端部署
+- 学生教师学习
+- 模型加速
+
+**算法原理：**
+大模型（教师）指导小模型（学生）学习，传递知识而非仅仅标签。
+
+**优缺点：**
+- 优点：保持性能、模型压缩、部署友好
+- 缺点：温度参数调节、教师模型依赖
+
+**案例推荐：**
+- [知识蒸馏教程](https://github.com/topics/knowledge-distillation)
+- [BERT蒸馏项目](https://github.com/topics/bert-distillation)
+- [CNN压缩案例](https://www.kaggle.com/code/dansbecker/cnn-knowledge-distillation)
+- [移动端部署项目](https://github.com/topics/mobile-model-distillation)
+
+### 146. Pruning
+
+**运用场景：**
+- 网络剪枝
+- 参数减少
+- 加速推理
+- 存储优化
+
+**算法原理：**
+移除网络中不重要的连接或神经元，保持性能的同时减少模型大小。
+
+**优缺点：**
+- 优点：显著压缩、保持精度、硬件友好
+- 缺点：剪枝策略选择、微调需求、结构化剪枝困难
+
+**案例推荐：**
+- [网络剪枝教程](https://github.com/topics/neural-network-pruning)
+- [结构化剪枝项目](https://github.com/topics/structured-pruning)
+- [非结构化剪枝案例](https://www.kaggle.com/code/dansbecker/unstructured-pruning)
+- [动态剪枝项目](https://github.com/topics/dynamic-pruning)
+
+### 147. Quantization
+
+**运用场景：**
+- 模型量化
+- 硬件加速
+- 边缘计算
+- 内存优化
+
+**算法原理：**
+降低模型参数的数值精度，从32位浮点数转为8位整数等。
+
+**优缺点：**
+- 优点：大幅压缩、硬件加速、功耗降低
+- 缺点：精度损失、量化误差、校准复杂
+
+**案例推荐：**
+- [模型量化教程](https://github.com/topics/model-quantization)
+- [Post-training量化项目](https://github.com/topics/post-training-quantization)
+- [量化感知训练案例](https://www.kaggle.com/code/dansbecker/quantization-aware-training)
+- [INT8推理项目](https://github.com/topics/int8-inference)
+
+### 148. Low-Rank Approximation
+
+**运用场景：**
+- 矩阵分解
+- 参数减少
+- 计算加速
+- 存储压缩
+
+**算法原理：**
+将高维参数矩阵分解为低秩矩阵的乘积，减少参数量。
+
+**优缺点：**
+- 优点：理论基础强、压缩比高、数学优雅
+- 缺点：近似误差、分解复杂度、rank选择
+
+**案例推荐：**
+- [低秩近似教程](https://github.com/topics/low-rank-approximation)
+- [SVD分解项目](https://github.com/topics/svd-neural-network)
+- [Tucker分解案例](https://www.kaggle.com/code/dansbecker/tucker-decomposition-nn)
+
+### 149. MobileNets
+
+**运用场景：**
+- 移动设备
+- 边缘计算
+- 实时应用
+- 资源受限环境
+
+**算法原理：**
+使用深度可分离卷积替代标准卷积，大幅减少计算量和参数。
+
+**优缺点：**
+- 优点：轻量级、高效率、适合移动端
+- 缺点：精度略降、架构限制
+
+**案例推荐：**
+- [MobileNets教程](https://github.com/topics/mobilenets)
+- [移动端分类项目](https://github.com/topics/mobilenet-classification)
+- [实时检测案例](https://www.kaggle.com/code/dansbecker/mobilenet-real-time-detection)
+- [边缘部署项目](https://github.com/topics/mobilenet-edge-deployment)
+
+### 150. Neural ODE
+
+**运用场景：**
+- 连续深度模型
+- 时间序列建模
+- 物理系统建模
+- 内存高效训练
+
+**算法原理：**
+将残差网络的离散层替换为连续的微分方程求解器。
+
+**优缺点：**
+- 优点：内存高效、自适应深度、理论优雅
+- 缺点：计算复杂、求解器依赖、训练慢
+
+**案例推荐：**
+- [Neural ODE教程](https://github.com/topics/neural-ode)
+- [时间序列建模项目](https://github.com/topics/neural-ode-time-series)
+- [连续深度学习案例](https://www.kaggle.com/code/dansbecker/neural-ode-continuous)
+- [物理建模项目](https://github.com/topics/neural-ode-physics)
+
+---
