@@ -1988,3 +1988,658 @@ AI系统能够自主修改自己的架构、算法和参数。
 - [生产规划项目](https://github.com/topics/production-planning-twins)
 
 ---
+## 情感与社会计算
+
+### 371. 情感计算神经网络
+
+**运用场景：**
+- 情感识别
+- 心理健康监测
+- 人机情感交互
+- 社交媒体分析
+
+**算法原理：**
+专门设计用于理解和生成情感的神经网络架构。
+
+**优缺点：**
+- 优点：情感理解深入、人性化交互、心理支持
+- 缺点：主观性强、文化差异、伦理敏感
+
+**案例推荐：**
+- [情感计算教程](https://github.com/topics/affective-computing-neural)
+- [情感识别系统项目](https://github.com/topics/emotion-recognition-system)
+- [心理健康AI案例](https://www.kaggle.com/code/renshengbushexie/mental-health-ai)
+- [情感对话系统项目](https://github.com/topics/emotional-dialogue-system)
+
+### 372. 社会网络智能分析
+
+**运用场景：**
+- 社交网络分析
+- 影响力预测
+- 舆情监控
+- 社区发现
+
+**算法原理：**
+分析社交网络中的结构、动态和影响传播模式。
+
+**优缺点：**
+- 优点：社会洞察深刻、预测能力强、应用广泛
+- 缺点：隐私问题、伦理争议、数据偏见
+
+**案例推荐：**
+- [社会网络分析教程](https://github.com/topics/social-network-intelligence)
+- [影响力传播项目](https://github.com/topics/influence-propagation)
+- [舆情分析案例](https://www.kaggle.com/code/renshengbushexie/social-sentiment-analysis)
+- [社区检测项目](https://github.com/topics/community-detection-ai)
+
+### 373. 群体智慧挖掘
+
+**运用场景：**
+- 众包智能
+- 集体决策
+- 知识聚合
+- 创新发现
+
+**算法原理：**
+从群体行为中提取集体智慧，超越个体认知限制。
+
+**优缺点：**
+- 优点：智慧聚合、集体洞察、创新发现
+- 缺点：群体偏见、质量控制、协调困难
+
+**案例推荐：**
+- [群体智慧教程](https://github.com/topics/collective-intelligence-mining)
+- [众包AI项目](https://github.com/topics/crowdsourcing-ai)
+- [集体决策案例](https://www.kaggle.com/code/renshengbushexie/collective-decision-making)
+- [知识聚合项目](https://github.com/topics/knowledge-aggregation)
+
+### 374. 文化感知AI
+
+**运用场景：**
+- 跨文化交流
+- 本地化AI
+- 文化研究
+- 国际化产品
+
+**算法原理：**
+理解和适应不同文化背景的AI系统，避免文化偏见。
+
+**优缺点：**
+- 优点：文化适应性、包容性强、全球化友好
+- 缺点：文化复杂性、标准化困难、评估挑战
+
+**案例推荐：**
+- [文化感知AI教程](https://github.com/topics/culture-aware-ai)
+- [跨文化NLP项目](https://github.com/topics/cross-cultural-nlp)
+- [文化偏见检测案例](https://www.kaggle.com/code/renshengbushexie/cultural-bias-detection)
+- [本地化AI系统项目](https://github.com/topics/localized-ai-systems)
+
+### 375. 道德推理AI
+
+**运用场景：**
+- 伦理决策支持
+- 道德教育
+- 法律分析
+- 社会治理
+
+**算法原理：**
+具备道德推理能力的AI系统，能够做出符合伦理的决策。
+
+**优缺点：**
+- 优点：伦理合规、决策支持、社会责任
+- 缺点：道德标准争议、实现困难、文化相对性
+
+**案例推荐：**
+- [道德推理教程](https://github.com/topics/moral-reasoning-ai)
+- [伦理决策系统项目](https://github.com/topics/ethical-decision-system)
+- [道德教育AI案例](https://www.kaggle.com/code/renshengbushexie/moral-education-ai)
+- [法律分析项目](https://github.com/topics/legal-analysis-ai)
+
+---
+
+## 可持续AI与绿色计算
+
+### 376. 碳感知机器学习
+
+**运用场景：**
+- 绿色AI开发
+- 碳足迹优化
+- 环境友好计算
+- 可持续AI
+
+**算法原理：**
+在机器学习过程中考虑碳排放，优化能耗和环境影响。
+
+**优缺点：**
+- 优点：环境友好、可持续发展、社会责任
+- 缺点：性能可能折损、评估复杂、标准不统一
+
+**案例推荐：**
+- [碳感知ML教程](https://github.com/topics/carbon-aware-machine-learning)
+- [绿色AI项目](https://github.com/topics/green-ai)
+- [能耗优化案例](https://www.kaggle.com/code/renshengbushexie/energy-efficient-ml)
+- [可持续计算项目](https://github.com/topics/sustainable-computing)
+
+### 377. 循环AI架构
+
+**运用场景：**
+- 资源重用
+- 模型回收
+- 知识迁移
+- 可持续发展
+
+**算法原理：**
+设计可重用、可回收的AI组件，减少重复开发和资源浪费。
+
+**优缺点：**
+- 优点：资源节约、开发效率高、可持续性好
+- 缺点：设计复杂、标准化需要、兼容性挑战
+
+**案例推荐：**
+- [循环AI教程](https://github.com/topics/circular-ai-architecture)
+- [模型重用项目](https://github.com/topics/model-reuse-framework)
+- [知识回收案例](https://www.kaggle.com/code/renshengbushexie/knowledge-recycling)
+- [可持续AI设计项目](https://github.com/topics/sustainable-ai-design)
+
+### 378. 环境监测AI
+
+**运用场景：**
+- 气候变化监测
+- 生态保护
+- 污染检测
+- 资源管理
+
+**算法原理：**
+专门用于环境数据分析和预测的AI算法。
+
+**优缺点：**
+- 优点：环境保护、科学价值高、社会意义大
+- 缺点：数据复杂、长期验证需要、跨学科挑战
+
+**案例推荐：**
+- [环境监测AI教程](https://github.com/topics/environmental-monitoring-ai)
+- [气候预测项目](https://github.com/topics/climate-prediction-ai)
+- [生态保护案例](https://www.kaggle.com/code/renshengbushexie/ecological-conservation-ai)
+- [污染检测项目](https://github.com/topics/pollution-detection-ai)
+
+### 379. 节能算法优化
+
+**运用场景：**
+- 数据中心优化
+- 移动设备节能
+- 边缘计算
+- 绿色计算
+
+**算法原理：**
+专门优化算法的能耗效率，在保持性能的同时降低功耗。
+
+**优缺点：**
+- 优点：能耗低、成本节约、环境友好
+- 缺点：优化复杂、性能权衡、硬件依赖
+
+**案例推荐：**
+- [节能算法教程](https://github.com/topics/energy-efficient-algorithms)
+- [数据中心优化项目](https://github.com/topics/datacenter-energy-optimization)
+- [移动节能案例](https://www.kaggle.com/code/renshengbushexie/mobile-energy-optimization)
+- [绿色计算项目](https://github.com/topics/green-computing-algorithms)
+
+### 380. 可再生能源AI
+
+**运用场景：**
+- 能源预测
+- 电网优化
+- 可再生能源管理
+- 智能电网
+
+**算法原理：**
+优化可再生能源的生产、存储和分配。
+
+**优缺点：**
+- 优点：能源效率高、环境友好、经济效益
+- 缺点：预测困难、复杂性高、政策依赖
+
+**案例推荐：**
+- [可再生能源AI教程](https://github.com/topics/renewable-energy-ai)
+- [风能预测项目](https://github.com/topics/wind-energy-prediction)
+- [太阳能优化案例](https://www.kaggle.com/code/renshengbushexie/solar-energy-optimization)
+- [智能电网项目](https://github.com/topics/smart-grid-ai)
+
+---
+
+## 跨现实计算
+
+### 381. 增强现实AI
+
+**运用场景：**
+- AR应用开发
+- 虚实融合
+- 工业培训
+- 教育娱乐
+
+**算法原理：**
+为增强现实环境提供智能感知、理解和交互能力。
+
+**优缺点：**
+- 优点：沉浸体验、实时交互、应用广泛
+- 缺点：计算要求高、硬件依赖、用户体验挑战
+
+**案例推荐：**
+- [增强现实AI教程](https://github.com/topics/augmented-reality-ai)
+- [AR物体识别项目](https://github.com/topics/ar-object-recognition)
+- [工业AR培训案例](https://www.kaggle.com/code/renshengbushexie/industrial-ar-training)
+- [教育AR应用项目](https://github.com/topics/educational-ar-ai)
+
+### 382. 虚拟现实智能
+
+**运用场景：**
+- VR内容生成
+- 虚拟角色
+- 沉浸式体验
+- 虚拟协作
+
+**算法原理：**
+在虚拟环境中实现智能行为和自然交互。
+
+**优缺点：**
+- 优点：完全可控环境、创造性强、体验丰富
+- 缺点：与现实脱节、硬件需求、晕动症
+
+**案例推荐：**
+- [虚拟现实AI教程](https://github.com/topics/virtual-reality-ai)
+- [VR内容生成项目](https://github.com/topics/vr-content-generation)
+- [虚拟角色AI案例](https://www.kaggle.com/code/renshengbushexie/virtual-character-ai)
+- [VR协作平台项目](https://github.com/topics/vr-collaboration-ai)
+
+### 383. 混合现实计算
+
+**运用场景：**
+- MR应用开发
+- 全息计算
+- 空间计算
+- 数字孪生可视化
+
+**算法原理：**
+融合物理和数字世界，提供无缝的混合现实体验。
+
+**优缺点：**
+- 优点：真实感强、交互自然、应用潜力大
+- 缺点：技术复杂、成本高、标准不成熟
+
+**案例推荐：**
+- [混合现实教程](https://github.com/topics/mixed-reality-ai)
+- [全息显示项目](https://github.com/topics/holographic-computing)
+- [空间计算案例](https://www.kaggle.com/code/renshengbushexie/spatial-computing)
+- [MR可视化项目](https://github.com/topics/mr-visualization)
+
+### 384. 跨现实数据同步
+
+**运用场景：**
+- 多现实协作
+- 数据一致性
+- 状态同步
+- 分布式现实
+
+**算法原理：**
+确保不同现实环境间的数据和状态一致性。
+
+**优缺点：**
+- 优点：一致性保证、协作便利、扩展性好
+- 缺点：同步复杂、延迟问题、冲突解决
+
+**案例推荐：**
+- [跨现实同步教程](https://github.com/topics/cross-reality-synchronization)
+- [多现实协作项目](https://github.com/topics/multi-reality-collaboration)
+- [状态同步案例](https://www.kaggle.com/code/renshengbushexie/cross-reality-state-sync)
+- [分布式现实项目](https://github.com/topics/distributed-reality)
+
+### 385. 现实感知AI
+
+**运用场景：**
+- 环境理解
+- 场景分析
+- 物体追踪
+- 空间建模
+
+**算法原理：**
+理解和建模真实世界的复杂性，支持跨现实应用。
+
+**优缺点：**
+- 优点：真实世界理解、鲁棒性强、适应性好
+- 缺点：复杂性高、计算需求大、精度要求高
+
+**案例推荐：**
+- [现实感知教程](https://github.com/topics/reality-aware-ai)
+- [环境理解项目](https://github.com/topics/environment-understanding)
+- [场景分析案例](https://www.kaggle.com/code/renshengbushexie/scene-analysis-ai)
+- [空间建模项目](https://github.com/topics/spatial-modeling-ai)
+
+---
+
+## 认知增强与人机协作
+
+### 386. 认知增强接口
+
+**运用场景：**
+- 人类能力增强
+- 认知辅助
+- 学习加速
+- 决策支持
+
+**算法原理：**
+设计增强人类认知能力的AI接口和系统。
+
+**优缺点：**
+- 优点：能力增强、效率提升、学习加速
+- 缺点：依赖性风险、隐私问题、伦理争议
+
+**案例推荐：**
+- [认知增强教程](https://github.com/topics/cognitive-augmentation)
+- [学习助手项目](https://github.com/topics/ai-learning-assistant)
+- [决策增强案例](https://www.kaggle.com/code/renshengbushexie/decision-augmentation)
+- [认知辅助项目](https://github.com/topics/cognitive-assistance)
+
+### 387. 人机协作智能
+
+**运用场景：**
+- 协作工作
+- 智能制造
+- 医疗辅助
+- 创意协作
+
+**算法原理：**
+优化人类和AI的协作模式，发挥各自优势。
+
+**优缺点：**
+- 优点：优势互补、效率高、质量好
+- 缺点：协调复杂、信任建立、接口设计
+
+**案例推荐：**
+- [人机协作教程](https://github.com/topics/human-ai-collaboration)
+- [协作制造项目](https://github.com/topics/collaborative-manufacturing)
+- [医疗协作案例](https://www.kaggle.com/code/renshengbushexie/medical-human-ai-collaboration)
+- [创意协作项目](https://github.com/topics/creative-collaboration-ai)
+
+### 388. 适应性用户界面
+
+**运用场景：**
+- 个性化界面
+- 自适应交互
+- 用户体验优化
+- 无障碍计算
+
+**算法原理：**
+根据用户行为和偏好动态调整界面和交互方式。
+
+**优缺点：**
+- 优点：个性化强、体验好、适应性强
+- 缺点：复杂度高、隐私考虑、一致性挑战
+
+**案例推荐：**
+- [适应性UI教程](https://github.com/topics/adaptive-user-interface)
+- [个性化界面项目](https://github.com/topics/personalized-interface)
+- [无障碍AI案例](https://www.kaggle.com/code/renshengbushexie/accessible-ai-interface)
+- [智能交互项目](https://github.com/topics/intelligent-interaction)
+
+### 389. 群体增强智能
+
+**运用场景：**
+- 团队协作
+- 集体智慧
+- 组织学习
+- 群体决策
+
+**算法原理：**
+增强群体的集体智能和协作能力。
+
+**优缺点：**
+- 优点：集体智慧、协作效率、创新能力
+- 缺点：群体动力学复杂、个体差异、协调困难
+
+**案例推荐：**
+- [群体增强教程](https://github.com/topics/collective-augmentation)
+- [团队智能项目](https://github.com/topics/team-intelligence)
+- [组织学习案例](https://www.kaggle.com/code/renshengbushexie/organizational-learning-ai)
+- [群体决策项目](https://github.com/topics/group-decision-ai)
+
+### 390. 技能传递AI
+
+**运用场景：**
+- 知识传承
+- 技能培训
+- 专家系统
+- 教育技术
+
+**算法原理：**
+捕获、建模和传递人类专家的技能和知识。
+
+**优缺点：**
+- 优点：知识保存、传承高效、培训标准化
+- 缺点：隐性知识难捕获、个性化挑战、更新困难
+
+**案例推荐：**
+- [技能传递教程](https://github.com/topics/skill-transfer-ai)
+- [专家知识捕获项目](https://github.com/topics/expert-knowledge-capture)
+- [技能培训案例](https://www.kaggle.com/code/renshengbushexie/skill-training-ai)
+- [知识传承项目](https://github.com/topics/knowledge-inheritance)
+
+---
+
+## 自主科学发现
+
+### 391. 科学假设生成
+
+**运用场景：**
+- 科学研究
+- 假设提出
+- 理论构建
+- 知识发现
+
+**算法原理：**
+自动分析科学数据和文献，生成新的科学假设。
+
+**优缺点：**
+- 优点：加速发现、创新思路、系统化分析
+- 缺点：创造性有限、验证需要、领域知识深度
+
+**案例推荐：**
+- [科学假设生成教程](https://github.com/topics/scientific-hypothesis-generation)
+- [自动假设发现项目](https://github.com/topics/automated-hypothesis-discovery)
+- [科学文献挖掘案例](https://www.kaggle.com/code/renshengbushexie/scientific-literature-mining)
+- [理论构建AI项目](https://github.com/topics/theory-building-ai)
+
+### 392. 实验设计AI
+
+**运用场景：**
+- 实验规划
+- 参数优化
+- 资源分配
+- 结果预测
+
+**算法原理：**
+智能设计科学实验，优化实验参数和条件。
+
+**优缺点：**
+- 优点：实验效率高、资源节约、结果可靠
+- 缺点：创新性限制、领域专业性、意外发现难
+
+**案例推荐：**
+- [实验设计AI教程](https://github.com/topics/ai-experiment-design)
+- [自动化实验室项目](https://github.com/topics/automated-laboratory)
+- [药物发现实验案例](https://www.kaggle.com/code/renshengbushexie/drug-discovery-experiment)
+- [材料实验设计项目](https://github.com/topics/materials-experiment-design)
+
+### 393. 科学数据挖掘
+
+**运用场景：**
+- 数据模式发现
+- 科学洞察
+- 知识提取
+- 趋势分析
+
+**算法原理：**
+从大规模科学数据中发现隐藏的模式和规律。
+
+**优缺点：**
+- 优点：发现能力强、处理大数据、客观分析
+- 缺点：解释困难、因果关系、领域知识需求
+
+**案例推荐：**
+- [科学数据挖掘教程](https://github.com/topics/scientific-data-mining)
+- [天体物理数据挖掘项目](https://github.com/topics/astrophysics-data-mining)
+- [生物信息学发现案例](https://www.kaggle.com/code/renshengbushexie/bioinformatics-discovery)
+- [材料科学挖掘项目](https://github.com/topics/materials-science-mining)
+
+### 394. 自动化科学推理
+
+**运用场景：**
+- 逻辑推理
+- 因果分析
+- 理论验证
+- 知识整合
+
+**算法原理：**
+模拟科学家的推理过程，进行自动化科学推理。
+
+**优缺点：**
+- 优点：推理严密、逻辑清晰、可重复
+- 缺点：创造性有限、直觉缺失、复杂推理困难
+
+**案例推荐：**
+- [自动推理教程](https://github.com/topics/automated-scientific-reasoning)
+- [因果推理项目](https://github.com/topics/causal-reasoning-science)
+- [理论验证案例](https://www.kaggle.com/code/renshengbushexie/theory-verification)
+- [知识整合项目](https://github.com/topics/knowledge-integration-science)
+
+### 395. 科学创新AI
+
+**运用场景：**
+- 创新发现
+- 跨学科整合
+- 概念组合
+- 突破性思维
+
+**算法原理：**
+模拟科学创新过程，产生新颖的科学想法和解决方案。
+
+**优缺点：**
+- 优点：创新潜力、跨学科视角、灵感启发
+- 缺点：创新质量不确定、实用性验证、接受度挑战
+
+**案例推荐：**
+- [科学创新AI教程](https://github.com/topics/scientific-innovation-ai)
+- [跨学科发现项目](https://github.com/topics/interdisciplinary-discovery)
+- [概念创新案例](https://www.kaggle.com/code/renshengbushexie/conceptual-innovation)
+- [突破性思维项目](https://github.com/topics/breakthrough-thinking-ai)
+
+---
+
+## 超越图灵的计算范式
+
+### 396. 超图灵计算模型
+
+**运用场景：**
+- 理论计算科学
+- 复杂性理论
+- 新计算范式
+- 哲学计算
+
+**算法原理：**
+探索超越图灵机计算能力的新计算模型。
+
+**优缺点：**
+- 优点：理论突破、计算边界扩展、新范式
+- 缺点：理论性强、实现困难、验证挑战
+
+**案例推荐：**
+- [超图灵计算教程](https://github.com/topics/hypercomputation)
+- [无限计算模型项目](https://github.com/topics/infinite-computation)
+- [非经典计算案例](https://www.kaggle.com/code/renshengbushexie/non-classical-computation)
+- [计算范式研究项目](https://github.com/topics/computation-paradigm-research)
+
+### 397. 意识计算架构
+
+**运用场景：**
+- 人工意识研究
+- 认知架构
+- 哲学AI
+- 意识理论验证
+
+**算法原理：**
+尝试实现具有意识特征的计算系统。
+
+**优缺点：**
+- 优点：前沿探索、理论意义重大、哲学价值
+- 缺点：定义不明、实现极难、争议巨大
+
+**案例推荐：**
+- [意识计算教程](https://github.com/topics/consciousness-computation)
+- [全局工作空间项目](https://github.com/topics/global-workspace-computation)
+- [意识测试案例](https://www.kaggle.com/code/renshengbushexie/consciousness-testing)
+- [意识理论实现项目](https://github.com/topics/consciousness-theory-implementation)
+
+### 398. 无限学习系统
+
+**运用场景：**
+- 永续学习
+- 无限适应
+- 开放世界学习
+- 通用智能
+
+**算法原理：**
+能够无限制持续学习和适应的AI系统。
+
+**优缺点：**
+- 优点：学习能力无限、适应性极强、通用性好
+- 缺点：实现极其困难、稳定性挑战、控制困难
+
+**案例推荐：**
+- [无限学习教程](https://github.com/topics/infinite-learning-systems)
+- [永续适应项目](https://github.com/topics/perpetual-adaptation)
+- [开放世界学习案例](https://www.kaggle.com/code/renshengbushexie/open-world-learning)
+- [通用学习项目](https://github.com/topics/universal-learning)
+
+### 399. 自我复制AI系统
+
+**运用场景：**
+- 自我复制
+- 系统进化
+- 自主繁殖
+- 分布式AI
+
+**算法原理：**
+能够复制自身并可能进化的AI系统。
+
+**优缺点：**
+- 优点：自我繁殖、进化能力、分布式扩展
+- 缺点：控制风险极高、伦理问题巨大、不可预测
+
+**案例推荐：**
+- [自我复制AI教程](https://github.com/topics/self-replicating-ai)
+- [系统自我复制项目](https://github.com/topics/system-self-replication)
+- [AI进化案例](https://www.kaggle.com/code/renshengbushexie/ai-evolution)
+- [分布式自复制项目](https://github.com/topics/distributed-self-replication)
+
+### 400. 奇点级AI架构
+
+**运用场景：**
+- 技术奇点研究
+- 超级智能
+- 递归自我改进
+- 未来AI
+
+**算法原理：**
+理论上能够递归自我改进并达到技术奇点的AI架构。
+
+**优缺点：**
+- 优点：理论突破、无限潜力、变革性影响
+- 缺点：风险极高、控制不可能、存在性威胁
+
+**案例推荐：**
+- [奇点AI教程](https://github.com/topics/singularity-ai-architecture)
+- [递归自改进项目](https://github.com/topics/recursive-self-improvement)
+- [超级智能研究案例](https://www.kaggle.com/code/renshengbushexie/superintelligence-research)
+- [AI安全研究项目](https://github.com/topics/ai-safety-research)
+
+---
+## 备注： 
+- **更新于20250812**
