@@ -1672,3 +1672,755 @@ SIFT的加速版本，使用积分图像和Hessian矩阵检测特征点。
 - [多模态时空分析案例](https://www.kaggle.com/code/renshengbushexie/multimodal-spatiotemporal-transformer)
 
 ---
+## 多智能体学习
+
+### 226. 多智能体强化学习（Multi-Agent RL）
+
+**运用场景：**
+- 游戏AI
+- 机器人协作
+- 交通控制
+- 资源分配
+
+**算法原理：**
+多个智能体在环境中同时学习，考虑智能体间的交互和协作。
+
+**优缺点：**
+- 优点：处理复杂交互、协作学习、实际应用广
+- 缺点：非平稳环境、策略更新困难、收敛性差
+
+**案例推荐：**
+- [多智能体强化学习教程](https://github.com/topics/multi-agent-reinforcement-learning)
+- [机器人协作项目](https://github.com/topics/multi-robot-collaboration)
+- [交通信号控制案例](https://www.kaggle.com/code/renshengbushexie/multi-agent-traffic-control)
+- [游戏AI项目](https://github.com/topics/multi-agent-game-ai)
+
+### 227. 独立学习（Independent Learning）
+
+**运用场景：**
+- 分布式系统
+- 并行学习
+- 简单多智能体环境
+- 基准比较
+
+**算法原理：**
+每个智能体独立学习，不考虑其他智能体的存在。
+
+**优缺点：**
+- 优点：简单实现、计算并行、无通信需求
+- 缺点：忽略交互、环境非平稳、性能有限
+
+**案例推荐：**
+- [独立学习教程](https://github.com/topics/independent-learning)
+- [分布式强化学习项目](https://github.com/topics/distributed-reinforcement-learning)
+- [并行智能体案例](https://www.kaggle.com/code/renshengbushexie/independent-agent-learning)
+
+### 228. 中心化训练分布式执行（CTDE）
+
+**运用场景：**
+- 机器人团队
+- 无人机群
+- 分布式控制
+- 协作任务
+
+**算法原理：**
+训练时使用全局信息，执行时各智能体基于局部观测独立决策。
+
+**优缺点：**
+- 优点：平衡性能和实用性、全局优化、分布式执行
+- 缺点：训练执行gap、通信需求、扩展性挑战
+
+**案例推荐：**
+- [CTDE教程](https://github.com/topics/centralized-training-decentralized-execution)
+- [无人机群控制项目](https://github.com/topics/drone-swarm-control)
+- [分布式协作案例](https://www.kaggle.com/code/renshengbushexie/ctde-collaborative-control)
+
+### 229. 通信学习（Communication Learning）
+
+**运用场景：**
+- 智能体协调
+- 信息共享
+- 团队决策
+- 协作优化
+
+**算法原理：**
+智能体学习何时、如何、与谁进行通信以提高协作效果。
+
+**优缺点：**
+- 优点：增强协作、信息共享、自适应通信
+- 缺点：通信开销、协议设计、训练复杂
+
+**案例推荐：**
+- [通信学习教程](https://github.com/topics/communication-learning)
+- [智能体协调项目](https://github.com/topics/agent-coordination)
+- [自适应通信案例](https://www.kaggle.com/code/renshengbushexie/adaptive-communication-learning)
+
+### 230. 竞争学习（Competitive Learning）
+
+**运用场景：**
+- 竞争游戏
+- 对抗训练
+- 策略博弈
+- 自我博弈
+
+**算法原理：**
+智能体在竞争环境中学习，通过与对手的对抗提升策略。
+
+**优缺点：**
+- 优点：策略多样性、自我改进、无需人类数据
+- 缺点：训练不稳定、策略循环、评估困难
+
+**案例推荐：**
+- [竞争学习教程](https://github.com/topics/competitive-learning)
+- [对抗游戏AI项目](https://github.com/topics/adversarial-game-ai)
+- [自我博弈案例](https://www.kaggle.com/code/renshengbushexie/self-play-competitive-learning)
+
+---
+
+## 神经符号学习
+
+### 231. 神经符号推理（Neural-Symbolic Reasoning）
+
+**运用场景：**
+- 知识推理
+- 逻辑问答
+- 符号计算
+- 可解释AI
+
+**算法原理：**
+结合神经网络的学习能力和符号系统的推理能力。
+
+**优缺点：**
+- 优点：可解释性强、逻辑推理、知识整合
+- 缺点：架构复杂、训练困难、扩展性差
+
+**案例推荐：**
+- [神经符号推理教程](https://github.com/topics/neural-symbolic-reasoning)
+- [逻辑问答系统项目](https://github.com/topics/logical-question-answering)
+- [知识图谱推理案例](https://www.kaggle.com/code/renshengbushexie/neural-symbolic-kg-reasoning)
+- [符号计算项目](https://github.com/topics/symbolic-computation-neural)
+
+### 232. 可微分程序合成
+
+**运用场景：**
+- 程序生成
+- 自动编程
+- 算法发现
+- 代码优化
+
+**算法原理：**
+使用可微分的方式搜索和优化程序结构和参数。
+
+**优缺点：**
+- 优点：自动化程度高、端到端优化、创新能力
+- 缺点：搜索空间巨大、训练困难、泛化性差
+
+**案例推荐：**
+- [可微分程序合成教程](https://github.com/topics/differentiable-programming)
+- [自动编程项目](https://github.com/topics/automatic-programming)
+- [算法发现案例](https://www.kaggle.com/code/renshengbushexie/algorithm-discovery)
+
+### 233. 神经模块网络（Neural Module Networks）
+
+**运用场景：**
+- 视觉问答
+- 结构化推理
+- 模块化学习
+- 组合泛化
+
+**算法原理：**
+将复杂任务分解为可组合的神经模块，动态组装解决问题。
+
+**优缺点：**
+- 优点：模块化设计、组合能力、可解释性
+- 缺点：模块设计复杂、组装策略、训练困难
+
+**案例推荐：**
+- [神经模块网络教程](https://github.com/topics/neural-module-networks)
+- [视觉问答项目](https://github.com/topics/visual-question-answering-nmn)
+- [结构化推理案例](https://www.kaggle.com/code/renshengbushexie/neural-module-reasoning)
+
+### 234. 图神经网络推理
+
+**运用场景：**
+- 知识图谱
+- 关系推理
+- 图结构学习
+- 逻辑推理
+
+**算法原理：**
+在图结构上进行神经推理，学习实体关系和逻辑规则。
+
+**优缺点：**
+- 优点：结构化推理、关系建模、可扩展
+- 缺点：图构建困难、推理深度有限、解释性差
+
+**案例推荐：**
+- [图神经推理教程](https://github.com/topics/graph-neural-reasoning)
+- [知识图谱补全项目](https://github.com/topics/knowledge-graph-completion)
+- [关系推理案例](https://www.kaggle.com/code/renshengbushexie/graph-relation-reasoning)
+
+### 235. 概念学习（Concept Learning）
+
+**运用场景：**
+- 概念发现
+- 抽象学习
+- 认知建模
+- 元学习
+
+**算法原理：**
+从示例中学习抽象概念，支持概念的组合和泛化。
+
+**优缺点：**
+- 优点：抽象能力强、泛化性好、认知合理
+- 缺点：概念表示困难、学习样本需求、评估困难
+
+**案例推荐：**
+- [概念学习教程](https://github.com/topics/concept-learning)
+- [抽象概念发现项目](https://github.com/topics/abstract-concept-discovery)
+- [认知建模案例](https://www.kaggle.com/code/renshengbushexie/cognitive-concept-learning)
+
+---
+
+## 生成式AI与大模型
+
+### 236. 大语言模型（Large Language Models）
+
+**运用场景：**
+- 文本生成
+- 对话系统
+- 代码生成
+- 知识问答
+
+**算法原理：**
+基于Transformer架构的大规模预训练语言模型。
+
+**优缺点：**
+- 优点：强大的生成能力、零样本学习、通用性强
+- 缺点：计算资源需求巨大、可能产生偏见、幻觉问题
+
+**案例推荐：**
+- [大语言模型教程](https://github.com/topics/large-language-models)
+- [GPT微调项目](https://github.com/topics/gpt-fine-tuning)
+- [对话系统案例](https://www.kaggle.com/code/renshengbushexie/llm-chatbot)
+- [代码生成项目](https://github.com/topics/llm-code-generation)
+
+### 237. 指令调优（Instruction Tuning）
+
+**运用场景：**
+- 模型对齐
+- 指令遵循
+- 任务适应
+- 人类偏好对齐
+
+**算法原理：**
+使用指令-响应对训练模型遵循人类指令的能力。
+
+**优缺点：**
+- 优点：提高指令遵循、用户友好、任务泛化
+- 缺点：数据质量依赖、偏见问题、评估困难
+
+**案例推荐：**
+- [指令调优教程](https://github.com/topics/instruction-tuning)
+- [模型对齐项目](https://github.com/topics/model-alignment)
+- [指令遵循案例](https://www.kaggle.com/code/renshengbushexie/instruction-following)
+- [人类反馈学习项目](https://github.com/topics/human-feedback-learning)
+
+### 238. 上下文学习（In-Context Learning）
+
+**运用场景：**
+- 少样本学习
+- 快速适应
+- 提示工程
+- 零样本推理
+
+**算法原理：**
+在输入中提供示例，模型通过上下文理解任务并生成相应输出。
+
+**优缺点：**
+- 优点：无需训练、快速适应、灵活性高
+- 缺点：上下文长度限制、示例选择重要、一致性问题
+
+**案例推荐：**
+- [上下文学习教程](https://github.com/topics/in-context-learning)
+- [少样本提示项目](https://github.com/topics/few-shot-prompting)
+- [提示工程案例](https://www.kaggle.com/code/renshengbushexie/prompt-engineering)
+- [零样本推理项目](https://github.com/topics/zero-shot-reasoning)
+
+### 239. 检索增强生成（RAG）
+
+**运用场景：**
+- 知识问答
+- 文档理解
+- 事实检查
+- 专业领域应用
+
+**算法原理：**
+结合检索系统和生成模型，先检索相关信息再生成回答。
+
+**优缺点：**
+- 优点：知识更新、事实准确性、可追溯性
+- 缺点：检索质量依赖、系统复杂、延迟增加
+
+**案例推荐：**
+- [RAG教程](https://github.com/topics/retrieval-augmented-generation)
+- [知识问答系统项目](https://github.com/topics/rag-question-answering)
+- [文档理解案例](https://www.kaggle.com/code/renshengbushexie/rag-document-understanding)
+- [专业领域RAG项目](https://github.com/topics/domain-specific-rag)
+
+### 240. 思维链推理（Chain-of-Thought）
+
+**运用场景：**
+- 复杂推理
+- 数学问题
+- 逻辑推理
+- 可解释AI
+
+**算法原理：**
+引导模型逐步展示推理过程，提高复杂问题的解决能力。
+
+**优缺点：**
+- 优点：提高推理能力、可解释性强、适用复杂任务
+- 缺点：推理路径可能错误、计算成本高、设计复杂
+
+**案例推荐：**
+- [思维链推理教程](https://github.com/topics/chain-of-thought)
+- [数学推理项目](https://github.com/topics/mathematical-reasoning)
+- [逻辑推理案例](https://www.kaggle.com/code/renshengbushexie/chain-of-thought-reasoning)
+- [复杂问题解决项目](https://github.com/topics/complex-problem-solving)
+
+---
+
+## 边缘计算与轻量化
+
+### 241. 移动端优化
+
+**运用场景：**
+- 移动应用
+- 边缘设备
+- 实时处理
+- 离线推理
+
+**算法原理：**
+针对移动设备的计算和存储限制优化模型架构和算法。
+
+**优缺点：**
+- 优点：低延迟、隐私保护、离线可用
+- 缺点：精度可能降低、开发复杂、硬件限制
+
+**案例推荐：**
+- [移动端优化教程](https://github.com/topics/mobile-optimization)
+- [Android深度学习项目](https://github.com/topics/android-deep-learning)
+- [iOS机器学习案例](https://www.kaggle.com/code/renshengbushexie/ios-machine-learning)
+- [边缘AI项目](https://github.com/topics/edge-ai)
+
+### 242. 模型蒸馏（Model Distillation）
+
+**运用场景：**
+- 模型压缩
+- 知识传递
+- 边缘部署
+- 加速推理
+
+**算法原理：**
+用大模型的输出训练小模型，传递知识而不仅仅是标签。
+
+**优缺点：**
+- 优点：保持性能、减少参数、知识传递
+- 缺点：蒸馏策略复杂、教师模型依赖、可能有性能损失
+
+**案例推荐：**
+- [模型蒸馏教程](https://github.com/topics/model-distillation)
+- [BERT蒸馏项目](https://github.com/topics/bert-distillation)
+- [CNN压缩案例](https://www.kaggle.com/code/renshengbushexie/cnn-distillation)
+- [多教师蒸馏项目](https://github.com/topics/multi-teacher-distillation)
+
+### 243. 早退机制（Early Exit）
+
+**运用场景：**
+- 自适应推理
+- 计算资源优化
+- 实时系统
+- 能耗控制
+
+**算法原理：**
+在网络的不同层设置出口，根据置信度决定是否提前退出。
+
+**优缺点：**
+- 优点：自适应计算、节省资源、灵活推理
+- 缺点：架构设计复杂、阈值选择、训练困难
+
+**案例推荐：**
+- [早退机制教程](https://github.com/topics/early-exit)
+- [自适应推理项目](https://github.com/topics/adaptive-inference)
+- [动态神经网络案例](https://www.kaggle.com/code/renshengbushexie/dynamic-neural-networks)
+- [能效优化项目](https://github.com/topics/energy-efficient-inference)
+
+### 244. 神经网络加速器
+
+**运用场景：**
+- 硬件加速
+- 专用芯片
+- 高性能计算
+- 边缘推理
+
+**算法原理：**
+设计专门的硬件架构加速神经网络的计算。
+
+**优缺点：**
+- 优点：性能极高、能效优秀、专门优化
+- 缺点：开发成本高、灵活性差、通用性有限
+
+**案例推荐：**
+- [神经网络加速器教程](https://github.com/topics/neural-network-accelerator)
+- [FPGA加速项目](https://github.com/topics/fpga-neural-acceleration)
+- [GPU优化案例](https://www.kaggle.com/code/renshengbushexie/gpu-neural-optimization)
+- [边缘AI芯片项目](https://github.com/topics/edge-ai-chip)
+### 245. 联邦边缘学习
+
+**运用场景：**
+- 边缘设备协作
+- 隐私保护
+- 分布式智能
+- IoT应用
+
+**算法原理：**
+在边缘设备上进行联邦学习，平衡隐私、效率和性能。
+
+**优缺点：**
+- 优点：隐私保护、减少通信、边缘智能
+- 缺点：设备异构、资源限制、协调复杂
+
+**案例推荐：**
+- [联邦边缘学习教程](https://github.com/topics/federated-edge-learning)
+- [IoT联邦学习项目](https://github.com/topics/iot-federated-learning)
+- [边缘设备协作案例](https://www.kaggle.com/code/renshengbushexie/edge-device-collaboration)
+- [移动联邦学习项目](https://github.com/topics/mobile-federated-learning)
+
+---
+
+## 科学计算与物理信息
+
+### 246. 物理信息神经网络（PINNs）
+
+**运用场景：**
+- 科学计算
+- 物理建模
+- 偏微分方程求解
+- 工程仿真
+
+**算法原理：**
+将物理定律作为约束加入神经网络训练，求解偏微分方程。
+
+**优缺点：**
+- 优点：物理一致性、数据需求少、泛化能力强
+- 缺点：训练困难、收敛慢、复杂系统处理困难
+
+**案例推荐：**
+- [PINNs教程](https://github.com/topics/physics-informed-neural-networks)
+- [流体力学建模项目](https://github.com/topics/fluid-dynamics-pinns)
+- [热传导方程案例](https://www.kaggle.com/code/renshengbushexie/heat-equation-pinns)
+- [结构力学项目](https://github.com/topics/structural-mechanics-pinns)
+
+### 247. 神经常微分方程（Neural ODEs）
+
+**运用场景：**
+- 连续时间建模
+- 动力系统
+- 时间序列
+- 科学建模
+
+**算法原理：**
+将深度网络视为连续时间动力系统，使用ODE求解器进行前向传播。
+
+**优缺点：**
+- 优点：内存高效、连续时间、理论优雅
+- 缺点：计算成本高、数值不稳定、调参困难
+
+**案例推荐：**
+- [Neural ODEs教程](https://github.com/topics/neural-ordinary-differential-equations)
+- [动力系统建模项目](https://github.com/topics/dynamical-systems-neural-odes)
+- [时间序列预测案例](https://www.kaggle.com/code/renshengbushexie/neural-odes-time-series)
+- [连续深度学习项目](https://github.com/topics/continuous-deep-learning)
+
+### 248. 分子性质预测
+
+**运用场景：**
+- 药物发现
+- 材料科学
+- 化学信息学
+- 分子设计
+
+**算法原理：**
+使用机器学习预测分子的物理化学性质。
+
+**优缺点：**
+- 优点：加速研发、减少实验、准确预测
+- 缺点：数据质量依赖、可解释性差、泛化困难
+
+**案例推荐：**
+- [分子性质预测教程](https://github.com/topics/molecular-property-prediction)
+- [药物发现项目](https://github.com/topics/drug-discovery-ml)
+- [分子图神经网络案例](https://www.kaggle.com/code/renshengbushexie/molecular-graph-neural-networks)
+- [材料性质预测项目](https://github.com/topics/materials-property-prediction)
+
+### 249. 蛋白质结构预测
+
+**运用场景：**
+- 结构生物学
+- 药物设计
+- 蛋白质工程
+- 生物信息学
+
+**算法原理：**
+从氨基酸序列预测蛋白质的三维结构。
+
+**优缺点：**
+- 优点：生物学意义重大、应用价值高、技术突破
+- 缺点：计算复杂、数据稀缺、验证困难
+
+**案例推荐：**
+- [蛋白质折叠教程](https://github.com/topics/protein-folding)
+- [AlphaFold复现项目](https://github.com/topics/alphafold-reproduction)
+- [蛋白质设计案例](https://www.kaggle.com/code/renshengbushexie/protein-design)
+- [结构预测项目](https://github.com/topics/protein-structure-prediction)
+
+### 250. 科学数据挖掘
+
+**运用场景：**
+- 科学发现
+- 数据驱动研究
+- 模式识别
+- 假设生成
+
+**算法原理：**
+从大规模科学数据中发现模式、规律和知识。
+
+**优缺点：**
+- 优点：发现新知识、数据驱动、自动化分析
+- 缺点：因果推断困难、领域知识需求、解释性挑战
+
+**案例推荐：**
+- [科学数据挖掘教程](https://github.com/topics/scientific-data-mining)
+- [基因组数据分析项目](https://github.com/topics/genomics-data-mining)
+- [天文数据挖掘案例](https://www.kaggle.com/code/renshengbushexie/astronomy-data-mining)
+- [材料发现项目](https://github.com/topics/materials-discovery)
+
+---
+## 新兴深度学习架构
+
+### 251. Mamba架构（状态空间模型）
+
+**运用场景：**
+- 长序列建模
+- 高效Transformer替代
+- 时间序列分析
+- 大规模语言建模
+
+**算法原理：**
+基于状态空间模型的新型架构，具有线性复杂度和强大的序列建模能力。
+
+**优缺点：**
+- 优点：线性复杂度、长序列处理、内存高效
+- 缺点：相对较新、理论分析不足、实现复杂
+
+**案例推荐：**
+- [Mamba架构教程](https://github.com/topics/mamba-architecture)
+- [状态空间模型项目](https://github.com/topics/state-space-models)
+- [长序列建模案例](https://www.kaggle.com/code/renshengbushexie/mamba-long-sequence)
+- [高效语言模型项目](https://github.com/topics/efficient-language-models)
+
+### 252. Mixture of Experts (MoE)
+
+**运用场景：**
+- 大规模模型
+- 稀疏激活
+- 多任务学习
+- 计算效率优化
+
+**算法原理：**
+使用多个专家网络和门控机制，每次只激活部分专家处理输入。
+
+**优缺点：**
+- 优点：参数高效、可扩展性强、专业化学习
+- 缺点：训练复杂、负载均衡困难、通信开销
+
+**案例推荐：**
+- [MoE模型教程](https://github.com/topics/mixture-of-experts)
+- [稀疏专家网络项目](https://github.com/topics/sparse-expert-networks)
+- [大规模MoE案例](https://www.kaggle.com/code/renshengbushexie/large-scale-moe)
+- [多任务专家系统项目](https://github.com/topics/multitask-experts)
+
+### 253. RetNet（保留网络）
+
+**运用场景：**
+- 序列建模
+- 并行训练
+- 递归推理
+- 长序列处理
+
+**算法原理：**
+结合Transformer和RNN优点的新架构，支持并行训练和递归推理。
+
+**优缺点：**
+- 优点：训练并行、推理高效、理论优雅
+- 缺点：相对较新、实现复杂、缺乏广泛验证
+
+**案例推荐：**
+- [RetNet教程](https://github.com/topics/retnet)
+- [保留网络实现项目](https://github.com/topics/retention-networks)
+- [序列建模对比案例](https://www.kaggle.com/code/renshengbushexie/retnet-sequence-modeling)
+- [高效推理项目](https://github.com/topics/efficient-inference-retnet)
+
+### 254. Kolmogorov-Arnold Networks (KAN)
+
+**运用场景：**
+- 函数逼近
+- 科学计算
+- 可解释AI
+- 数学建模
+
+**算法原理：**
+基于Kolmogorov-Arnold表示定理的神经网络，使用可学习的激活函数。
+
+**优缺点：**
+- 优点：理论基础强、可解释性好、参数高效
+- 缺点：训练困难、计算复杂、应用有限
+
+**案例推荐：**
+- [KAN网络教程](https://github.com/topics/kolmogorov-arnold-networks)
+- [可学习激活函数项目](https://github.com/topics/learnable-activation-functions)
+- [科学计算KAN案例](https://www.kaggle.com/code/renshengbushexie/kan-scientific-computing)
+- [函数逼近项目](https://github.com/topics/function-approximation-kan)
+
+### 255. 层次视觉Transformer（HiT）
+
+**运用场景：**
+- 多尺度视觉理解
+- 层次特征学习
+- 计算机视觉
+- 图像分析
+
+**算法原理：**
+构建层次化的视觉Transformer，逐步建模从局部到全局的视觉特征。
+
+**优缺点：**
+- 优点：多尺度建模、层次特征、视觉理解强
+- 缺点：计算复杂、内存需求大、设计复杂
+
+**案例推荐：**
+- [层次视觉Transformer教程](https://github.com/topics/hierarchical-vision-transformer)
+- [多尺度视觉项目](https://github.com/topics/multiscale-vision-transformer)
+- [层次特征学习案例](https://www.kaggle.com/code/renshengbushexie/hierarchical-visual-features)
+- [视觉理解项目](https://github.com/topics/visual-understanding-hit)
+
+---
+
+## 高级优化与正则化
+
+### 256. 自适应梯度裁剪（Adaptive Gradient Clipping）
+
+**运用场景：**
+- 大模型训练
+- 梯度爆炸防范
+- 训练稳定性
+- 深度网络优化
+
+**算法原理：**
+根据梯度统计信息自适应调整梯度裁剪阈值。
+
+**优缺点：**
+- 优点：自适应调整、训练稳定、减少调参
+- 缺点：计算开销、统计估计、超参数依赖
+
+**案例推荐：**
+- [自适应梯度裁剪教程](https://github.com/topics/adaptive-gradient-clipping)
+- [大模型稳定训练项目](https://github.com/topics/stable-large-model-training)
+- [梯度优化案例](https://www.kaggle.com/code/renshengbushexie/adaptive-gradient-clipping)
+- [深度网络优化项目](https://github.com/topics/deep-network-optimization)
+
+### 257. 权重衰减调度（Weight Decay Scheduling）
+
+**运用场景：**
+- 正则化优化
+- 过拟合控制
+- 训练策略
+- 模型泛化
+
+**算法原理：**
+动态调整权重衰减系数，在训练过程中优化正则化强度。
+
+**优缺点：**
+- 优点：动态正则化、泛化性能好、自适应调整
+- 缺点：调度策略设计、超参数选择、实现复杂
+
+**案例推荐：**
+- [权重衰减调度教程](https://github.com/topics/weight-decay-scheduling)
+- [动态正则化项目](https://github.com/topics/dynamic-regularization)
+- [训练策略优化案例](https://www.kaggle.com/code/renshengbushexie/weight-decay-scheduling)
+- [泛化性能提升项目](https://github.com/topics/generalization-improvement)
+
+### 258. 噪声对比估计（Noise Contrastive Estimation）
+
+**运用场景：**
+- 语言建模
+- 大词汇表训练
+- 概率模型
+- 无监督学习
+
+**算法原理：**
+通过区分真实数据和噪声数据来估计归一化常数，避免计算配分函数。
+
+**优缺点：**
+- 优点：避免配分函数、计算高效、理论基础强
+- 缺点：噪声分布选择、估计质量、实现复杂
+
+**案例推荐：**
+- [噪声对比估计教程](https://github.com/topics/noise-contrastive-estimation)
+- [大词汇表语言模型项目](https://github.com/topics/large-vocabulary-language-model)
+- [概率模型训练案例](https://www.kaggle.com/code/renshengbushexie/nce-probability-model)
+- [词嵌入优化项目](https://github.com/topics/word-embedding-nce)
+
+### 259. 渐进式训练（Progressive Training）
+
+**运用场景：**
+- 课程学习
+- 数据效率
+- 训练加速
+- 难度递进
+
+**算法原理：**
+从简单样本开始，逐步增加训练数据的复杂度和难度。
+
+**优缺点：**
+- 优点：训练稳定、收敛快、数据效率高
+- 缺点：课程设计复杂、难度评估、调度策略
+
+**案例推荐：**
+- [渐进式训练教程](https://github.com/topics/progressive-training)
+- [课程学习项目](https://github.com/topics/curriculum-learning)
+- [难度递进训练案例](https://www.kaggle.com/code/renshengbushexie/progressive-curriculum-training)
+- [数据效率优化项目](https://github.com/topics/data-efficient-training)
+
+### 260. 梯度手术（Gradient Surgery）
+
+**运用场景：**
+- 多任务学习
+- 梯度冲突解决
+- 任务平衡
+- 优化改进
+
+**算法原理：**
+检测并解决多任务学习中的梯度冲突，确保所有任务都能得到改进。
+
+**优缺点：**
+- 优点：解决任务冲突、公平优化、理论支撑
+- 缺点：计算开销、实现复杂、调参困难
+
+**案例推荐：**
+- [梯度手术教程](https://github.com/topics/gradient-surgery)
+- [多任务梯度优化项目](https://github.com/topics/multitask-gradient-optimization)
+- [任务冲突解决案例](https://www.kaggle.com/code/renshengbushexie/gradient-surgery-multitask)
+- [公平多任务学习项目](https://github.com/topics/fair-multitask-learning)
+
+---
