@@ -1255,3 +1255,616 @@ TRPO的简化版本，使用裁剪目标函数限制策略更新。
 - [医学图像增强项目](https://github.com/topics/cyclegan-medical-imaging)
 
 ---
+## 正则化与优化技术
+
+### 72. L1正则化（Lasso正则化）
+
+**运用场景：**
+- 特征选择
+- 稀疏建模
+- 高维数据
+- 变量筛选
+
+**算法原理：**
+在损失函数中添加参数绝对值之和，促进稀疏解。
+
+**优缺点：**
+- 优点：自动特征选择、稀疏解、可解释性强
+- 缺点：不可微、组效应、不稳定
+
+**案例推荐：**
+- [L1正则化教程](https://scikit-learn.org/stable/modules/linear_model.html#lasso)
+- [特征选择项目](https://github.com/topics/l1-regularization-feature-selection)
+- [高维数据建模案例](https://www.kaggle.com/code/dansbecker/l1-regularization-highdim)
+
+### 73. L2正则化（岭正则化）
+
+**运用场景：**
+- 防止过拟合
+- 参数平滑
+- 数值稳定
+- 多重共线性
+
+**算法原理：**
+在损失函数中添加参数平方和，限制参数大小。
+
+**优缺点：**
+- 优点：防止过拟合、数值稳定、可微
+- 缺点：不进行特征选择、参数收缩
+
+**案例推荐：**
+- [L2正则化教程](https://scikit-learn.org/stable/modules/linear_model.html#ridge-regression)
+- [神经网络正则化项目](https://github.com/topics/l2-regularization-neural-network)
+- [回归问题案例](https://www.kaggle.com/code/dansbecker/l2-regularization-regression)
+
+### 74. 弹性网络正则化
+
+**运用场景：**
+- 平衡L1和L2
+- 组特征选择
+- 相关特征处理
+- 稳定建模
+
+**算法原理：**
+L1和L2正则化的线性组合，平衡稀疏性和稳定性。
+
+**优缺点：**
+- 优点：结合两者优点、处理相关特征、稳定性好
+- 缺点：两个超参数、调参复杂
+
+**案例推荐：**
+- [弹性网络教程](https://scikit-learn.org/stable/modules/linear_model.html#elastic-net)
+- [基因数据分析项目](https://github.com/topics/elastic-net-genomics)
+- [金融建模案例](https://www.kaggle.com/code/dansbecker/elastic-net-finance)
+
+### 75. Dropout正则化
+
+**运用场景：**
+- 神经网络防过拟合
+- 模型集成
+- 不确定性估计
+- 鲁棒性提升
+
+**算法原理：**
+随机丢弃神经元，强制网络学习冗余表示。
+
+**优缺点：**
+- 优点：简单有效、防止过拟合、隐式集成
+- 缺点：增加训练时间、推理不确定性
+
+**案例推荐：**
+- [Dropout教程](https://pytorch.org/docs/stable/generated/torch.nn.Dropout.html)
+- [深度学习项目](https://github.com/topics/dropout-deep-learning)
+- [CNN正则化案例](https://www.kaggle.com/code/dansbecker/dropout-cnn-regularization)
+- [RNN防过拟合项目](https://github.com/topics/dropout-rnn)
+
+### 76. Batch Normalization
+
+**运用场景：**
+- 加速训练
+- 稳定梯度
+- 内部协变量偏移
+- 深度网络训练
+
+**算法原理：**
+标准化每层的输入分布，减少内部协变量偏移。
+
+**优缺点：**
+- 优点：加速收敛、稳定训练、允许更大学习率
+- 缺点：推理时需要统计量、小批量问题
+
+**案例推荐：**
+- [Batch Normalization教程](https://pytorch.org/docs/stable/generated/torch.nn.BatchNorm2d.html)
+- [深度CNN项目](https://github.com/topics/batch-normalization-cnn)
+- [ResNet训练案例](https://www.kaggle.com/code/dansbecker/batch-normalization-resnet)
+- [训练稳定性项目](https://github.com/topics/batch-normalization-stability)
+
+### 77. Gradient Clipping
+
+**运用场景：**
+- 防止梯度爆炸
+- RNN训练
+- 深度网络
+- 训练稳定性
+
+**算法原理：**
+限制梯度的范数或值，防止梯度过大导致训练不稳定。
+
+**优缺点：**
+- 优点：防止梯度爆炸、训练稳定、简单有效
+- 缺点：可能限制学习、阈值选择重要
+
+**案例推荐：**
+- [梯度裁剪教程](https://pytorch.org/docs/stable/nn.html#torch.nn.utils.clip_grad_norm_)
+- [RNN训练项目](https://github.com/topics/gradient-clipping-rnn)
+- [深度学习稳定训练案例](https://www.kaggle.com/code/dansbecker/gradient-clipping-stability)
+
+### 78. Early Stopping
+
+**运用场景：**
+- 防止过拟合
+- 自动停止训练
+- 计算资源节省
+- 模型选择
+
+**算法原理：**
+监控验证性能，在性能不再提升时停止训练。
+
+**优缺点：**
+- 优点：防止过拟合、自动化、节省时间
+- 缺点：可能提前停止、需要验证集
+
+**案例推荐：**
+- [Early Stopping教程](https://keras.io/api/callbacks/early_stopping/)
+- [神经网络训练项目](https://github.com/topics/early-stopping-neural-network)
+- [深度学习最佳实践案例](https://www.kaggle.com/code/dansbecker/early-stopping-best-practices)
+
+### 79. Hyperparameter Tuning
+
+**运用场景：**
+- 模型优化
+- 性能提升
+- 自动化机器学习
+- 实验设计
+
+**算法原理：**
+系统性搜索最优超参数组合，包括网格搜索、随机搜索、贝叶斯优化等。
+
+**优缺点：**
+- 优点：提高模型性能、系统化优化
+- 缺点：计算成本高、时间消耗大
+
+**案例推荐：**
+- [超参数调优教程](https://scikit-learn.org/stable/modules/grid_search.html)
+- [贝叶斯优化项目](https://github.com/topics/hyperparameter-optimization)
+- [AutoML案例](https://www.kaggle.com/code/dansbecker/hyperparameter-tuning-automl)
+- [深度学习调参项目](https://github.com/topics/hyperparameter-tuning-deep-learning)
+
+---
+
+## 模型集成技术
+
+### 80. Bagging（Bootstrap Aggregating）
+
+**运用场景：**
+- 减少方差
+- 并行训练
+- 随机森林
+- 模型稳定性
+
+**算法原理：**
+通过自助采样训练多个模型，然后平均预测结果。
+
+**优缺点：**
+- 优点：减少过拟合、并行训练、提高稳定性
+- 缺点：可能增加偏差、计算资源需求大
+
+**案例推荐：**
+- [Bagging集成教程](https://scikit-learn.org/stable/modules/ensemble.html#bagging)
+- [决策树Bagging项目](https://github.com/topics/bagging-decision-trees)
+- [回归问题案例](https://www.kaggle.com/code/dansbecker/bagging-regression)
+- [分类任务项目](https://github.com/topics/bagging-classification)
+
+### 81. Boosting
+
+**运用场景：**
+- 提高弱学习器性能
+- 序列学习
+- AdaBoost、XGBoost
+- 偏差减少
+
+**算法原理：**
+顺序训练弱学习器，每个学习器关注前一个学习器的错误。
+
+**优缺点：**
+- 优点：提高准确率、减少偏差
+- 缺点：容易过拟合、对噪声敏感、顺序训练
+
+**案例推荐：**
+- [Boosting算法教程](https://scikit-learn.org/stable/modules/ensemble.html#boosting)
+- [AdaBoost实现项目](https://github.com/topics/boosting-adaboost)
+- [梯度提升案例](https://www.kaggle.com/code/dansbecker/gradient-boosting-ensemble)
+- [XGBoost应用项目](https://github.com/topics/boosting-xgboost)
+
+### 82. Stacking
+
+**运用场景：**
+- 模型融合
+- Kaggle竞赛
+- 复杂预测任务
+- 异构模型集成
+
+**算法原理：**
+使用元学习器来学习如何组合基学习器的预测。
+
+**优缺点：**
+- 优点：充分利用不同模型优势、性能提升明显
+- 缺点：计算复杂度高、容易过拟合、可解释性差
+
+**案例推荐：**
+- [Stacking集成教程](https://scikit-learn.org/stable/modules/ensemble.html#stacking)
+- [Kaggle竞赛Stacking项目](https://github.com/topics/stacking-kaggle)
+- [多模型融合案例](https://www.kaggle.com/code/dansbecker/stacking-ensemble)
+- [回归问题Stacking项目](https://github.com/topics/stacking-regression)
+
+### 83. Voting
+
+**运用场景：**
+- 分类任务
+- 简单模型融合
+- 决策系统
+- 快速集成
+
+**算法原理：**
+通过多数投票（硬投票）或平均概率（软投票）来组合预测。
+
+**优缺点：**
+- 优点：简单易实现、降低方差、提高鲁棒性
+- 缺点：假设所有模型同等重要、可能被弱模型拖累
+
+**案例推荐：**
+- [Voting分类器教程](https://scikit-learn.org/stable/modules/ensemble.html#voting-classifier)
+- [多分类器融合项目](https://github.com/topics/voting-classifier)
+- [硬投票vs软投票案例](https://www.kaggle.com/code/dansbecker/voting-classifier-comparison)
+- [集成学习项目](https://github.com/topics/voting-ensemble)
+
+### 84. 深度学习集成
+
+**运用场景：**
+- 复杂神经网络任务
+- 不确定性量化
+- 模型鲁棒性
+- 高精度要求
+
+**算法原理：**
+训练多个神经网络并组合预测，包括dropout集成、快照集成等。
+
+**优缺点：**
+- 优点：提高精度、量化不确定性、增强鲁棒性
+- 缺点：计算成本高、推理时间长、内存需求大
+
+**案例推荐：**
+- [深度学习集成教程](https://github.com/topics/deep-learning-ensemble)
+- [CNN集成项目](https://github.com/topics/cnn-ensemble)
+- [不确定性量化案例](https://www.kaggle.com/code/dansbecker/deep-ensemble-uncertainty)
+- [模型蒸馏项目](https://github.com/topics/ensemble-distillation)
+
+### 85. 数据增强
+
+**运用场景：**
+- 增加数据多样性
+- 防止过拟合
+- 图像处理
+- 自然语言处理
+
+**算法原理：**
+通过变换生成更多训练数据，提高模型泛化能力。
+
+**优缺点：**
+- 优点：增加数据量、提高泛化、成本低
+- 缺点：可能引入偏差、变换选择重要
+
+**案例推荐：**
+- [数据增强教程](https://pytorch.org/vision/stable/transforms.html)
+- [图像增强项目](https://github.com/topics/data-augmentation-image)
+- [文本增强案例](https://www.kaggle.com/code/dansbecker/text-data-augmentation)
+- [音频增强项目](https://github.com/topics/audio-data-augmentation)
+
+---
+
+## 其他技术
+
+### 86. ID3 (Iterative Dichotomiser 3)
+
+**运用场景：**
+- 分类任务
+- 规则提取
+- 教育演示
+- 简单决策问题
+
+**算法原理：**
+基于信息增益构建决策树，选择信息增益最大的特征进行分割。
+
+**优缺点：**
+- 优点：简单易懂、可解释性强、快速
+- 缺点：只能处理分类特征、容易过拟合、偏向多值特征
+
+**案例推荐：**
+- [ID3算法实现](https://github.com/topics/id3-algorithm)
+- [决策树教学项目](https://github.com/topics/id3-decision-tree)
+- [分类规则提取案例](https://www.kaggle.com/code/dansbecker/id3-rule-extraction)
+
+### 87. C4.5
+
+**运用场景：**
+- 处理连续特征
+- 缺失值处理
+- 改进的决策树
+- 实际应用场景
+
+**算法原理：**
+ID3的改进，使用信息增益比，能处理连续特征和缺失值。
+
+**优缺点：**
+- 优点：处理连续特征、缺失值处理、剪枝技术
+- 缺点：计算复杂度高、内存需求大
+
+**案例推荐：**
+- [C4.5算法教程](https://github.com/topics/c45-algorithm)
+- [连续特征处理项目](https://github.com/topics/c45-continuous-features)
+- [缺失值处理案例](https://www.kaggle.com/code/dansbecker/c45-missing-values)
+
+### 88. CART (Classification and Regression Trees)
+
+**运用场景：**
+- 分类和回归任务
+- 特征选择
+- 现代决策树基础
+- 集成方法基础
+
+**算法原理：**
+基于基尼不纯度或均方误差的二叉树，支持分类和回归。
+
+**优缺点：**
+- 优点：统一框架、二叉树简单、支持回归
+- 缺点：可能偏向二元分割、复杂度高
+
+**案例推荐：**
+- [CART算法实现](https://scikit-learn.org/stable/modules/tree.html)
+- [回归树项目](https://github.com/topics/cart-regression-tree)
+- [分类树案例](https://www.kaggle.com/code/dansbecker/cart-classification-tree)
+- [特征重要性项目](https://github.com/topics/cart-feature-importance)
+
+### 89. 随机森林（Random Forest）
+
+**运用场景：**
+- 特征重要性
+- 大数据处理
+- Bagging集成
+- 鲁棒预测
+
+**算法原理：**
+多个决策树的集成，使用Bootstrap抽样和随机特征选择。
+
+**优缺点：**
+- 优点：减少过拟合、并行训练、特征重要性
+- 缺点：可解释性差、内存消耗、对噪声敏感
+
+**案例推荐：**
+- [随机森林教程](https://scikit-learn.org/stable/modules/ensemble.html#random-forests)
+- [特征重要性分析项目](https://github.com/topics/random-forest-feature-importance)
+- [大数据分类案例](https://www.kaggle.com/code/dansbecker/random-forest-big-data)
+- [回归预测项目](https://github.com/topics/random-forest-regression)
+
+### 90. 多输出树（Multi-output Trees）
+
+**运用场景：**
+- 多标签分类
+- 多任务回归
+- 结构化输出
+- 相关输出预测
+
+**算法原理：**
+单个树处理多个输出，利用输出间的相关性。
+
+**优缺点：**
+- 优点：考虑输出相关性、计算效率高、统一框架
+- 缺点：树结构复杂、可能过拟合
+
+**案例推荐：**
+- [多输出树教程](https://scikit-learn.org/stable/modules/tree.html#multi-output-problems)
+- [多标签分类项目](https://github.com/topics/multi-output-trees)
+- [多任务学习案例](https://www.kaggle.com/code/dansbecker/multi-output-decision-tree)
+
+### 91. 特征选择（Feature Selection）
+
+**运用场景：**
+- 高维数据降维
+- 提高模型性能
+- 减少计算复杂度
+- 增强可解释性
+
+**算法原理：**
+通过统计方法、信息论或机器学习方法选择最相关的特征。
+
+**优缺点：**
+- 优点：降低维度、提高性能、增强可解释性
+- 缺点：可能丢失重要信息、计算成本高
+
+**案例推荐：**
+- [特征选择教程](https://scikit-learn.org/stable/modules/feature_selection.html)
+- [高维数据处理项目](https://github.com/topics/feature-selection-high-dimensional)
+- [基因数据分析案例](https://www.kaggle.com/code/dansbecker/feature-selection-genomics)
+- [文本特征选择项目](https://github.com/topics/feature-selection-nlp)
+
+### 92. 高斯过程（Gaussian Processes）
+
+**运用场景：**
+- 不确定性量化
+- 贝叶斯优化
+- 小样本学习
+- 黑盒函数建模
+
+**算法原理：**
+函数上的概率分布，提供预测均值和方差。
+
+**优缺点：**
+- 优点：不确定性量化、理论基础强、少样本有效
+- 缺点：计算复杂度高、核函数选择重要、可扩展性差
+
+**案例推荐：**
+- [高斯过程教程](https://scikit-learn.org/stable/modules/gaussian_process.html)
+- [贝叶斯优化项目](https://github.com/topics/gaussian-process-optimization)
+- [不确定性建模案例](https://www.kaggle.com/code/dansbecker/gaussian-process-uncertainty)
+- [超参数优化项目](https://github.com/topics/gaussian-process-hyperparameter)
+
+### 93. 贝叶斯优化（Bayesian Optimization）
+
+**运用场景：**
+- 超参数优化
+- 黑盒优化
+- 实验设计
+- 自动化机器学习
+
+**算法原理：**
+使用代理模型（通常是高斯过程）指导搜索过程，平衡探索和利用。
+
+**优缺点：**
+- 优点：样本效率高、全局优化、处理噪声
+- 缺点：代理模型假设、高维困难、计算复杂
+
+**案例推荐：**
+- [贝叶斯优化教程](https://github.com/topics/bayesian-optimization)
+- [AutoML项目](https://github.com/topics/bayesian-optimization-automl)
+- [深度学习调参案例](https://www.kaggle.com/code/dansbecker/bayesian-optimization-deep-learning)
+- [实验设计项目](https://github.com/topics/bayesian-optimization-experimental-design)
+
+### 94. 变分贝叶斯（Variational Bayesian Methods）
+
+**运用场景：**
+- 近似贝叶斯推断
+- 复杂模型推断
+- 无监督学习
+- 概率建模
+
+**算法原理：**
+使用变分推断近似复杂的后验分布，优化变分下界。
+
+**优缺点：**
+- 优点：处理复杂模型、计算可行、理论基础
+- 缺点：近似误差、局部最优、实现复杂
+
+**案例推荐：**
+- [变分贝叶斯教程](https://github.com/topics/variational-bayes)
+- [变分自编码器项目](https://github.com/topics/variational-autoencoder)
+- [贝叶斯神经网络案例](https://www.kaggle.com/code/dansbecker/variational-bayesian-neural-network)
+- [主题模型项目](https://github.com/topics/variational-inference-topic-model)
+
+### 95. 贝叶斯深度学习（Bayesian Deep Learning）
+
+**运用场景：**
+- 不确定性量化
+- 小样本学习
+- 安全关键应用
+- 可靠AI系统
+
+**算法原理：**
+在神经网络参数上施加先验分布，通过贝叶斯推断获得参数后验。
+
+**优缺点：**
+- 优点：不确定性量化、防止过拟合、理论基础强
+- 缺点：计算复杂、近似方法、实现困难
+
+**案例推荐：**
+- [贝叶斯深度学习教程](https://github.com/topics/bayesian-deep-learning)
+- [不确定性量化项目](https://github.com/topics/bayesian-neural-network-uncertainty)
+- [医疗诊断案例](https://www.kaggle.com/code/dansbecker/bayesian-deep-learning-medical)
+- [自动驾驶项目](https://github.com/topics/bayesian-deep-learning-autonomous)
+
+### 96. 朴素贝叶斯（Naive Bayes）
+
+**运用场景：**
+- 文本分类
+- 垃圾邮件检测
+- 情感分析
+- 医疗诊断
+
+**算法原理：**
+基于贝叶斯定理和特征独立假设，计算类别后验概率。
+
+**优缺点：**
+- 优点：简单快速、少样本有效、理论基础强
+- 缺点：独立性假设强、连续特征处理
+
+**案例推荐：**
+- [朴素贝叶斯教程](https://scikit-learn.org/stable/modules/naive_bayes.html)
+- [文本分类项目](https://github.com/topics/naive-bayes-text-classification)
+- [垃圾邮件检测案例](https://www.kaggle.com/code/dansbecker/naive-bayes-spam-detection)
+- [情感分析项目](https://github.com/topics/naive-bayes-sentiment-analysis)
+
+### 97. 贝叶斯网络（Bayesian Networks）
+
+**运用场景：**
+- 因果推理
+- 概率图模型
+- 医疗诊断
+- 风险评估
+
+**算法原理：**
+有向无环图表示变量间的概率依赖关系，支持推理和学习。
+
+**优缺点：**
+- 优点：因果建模、处理不确定性、可解释性强
+- 缺点：结构学习困难、计算复杂、专家知识需求
+
+**案例推荐：**
+- [贝叶斯网络教程](https://github.com/topics/bayesian-network)
+- [医疗诊断项目](https://github.com/topics/bayesian-network-medical)
+- [因果推理案例](https://www.kaggle.com/code/dansbecker/bayesian-network-causal)
+- [风险评估项目](https://github.com/topics/bayesian-network-risk)
+
+### 98. BERT（Bidirectional Encoder Representations from Transformers）
+
+**运用场景：**
+- 自然语言理解
+- 文本分类
+- 问答系统
+- 命名实体识别
+
+**算法原理：**
+双向Transformer编码器的预训练模型，通过掩码语言模型预训练。
+
+**优缺点：**
+- 优点：双向上下文、预训练效果好、迁移能力强
+- 缺点：计算资源需求大、推理速度慢
+
+**案例推荐：**
+- [BERT微调教程](https://huggingface.co/transformers/training.html)
+- [文本分类项目](https://github.com/topics/bert-text-classification)
+- [问答系统案例](https://www.kaggle.com/code/dansbecker/bert-question-answering)
+- [命名实体识别项目](https://github.com/topics/bert-named-entity-recognition)
+
+### 99. GPT（Generative Pre-trained Transformer）
+
+**运用场景：**
+- 文本生成
+- 对话系统
+- 代码生成
+- 创意写作
+
+**算法原理：**
+自回归语言模型，基于Transformer解码器，通过大规模文本预训练。
+
+**优缺点：**
+- 优点：生成能力强、上下文理解好、多任务能力
+- 缺点：单向建模、可能生成错误信息、计算需求大
+
+**案例推荐：**
+- [GPT文本生成](https://github.com/openai/gpt-2)
+- [对话系统项目](https://github.com/topics/gpt-chatbot)
+- [代码生成案例](https://www.kaggle.com/code/dansbecker/gpt-code-generation)
+- [创意写作项目](https://github.com/topics/gpt-creative-writing)
+
+### 100. 图神经网络（Graph Neural Networks）
+
+**运用场景：**
+- 社交网络分析
+- 分子性质预测
+- 知识图谱
+- 推荐系统
+
+**算法原理：**
+专门设计用于处理图结构数据的神经网络，通过消息传递学习节点和边的表示。
+
+**优缺点：**
+- 优点：处理非欧几里得数据、捕捉图结构信息、灵活性强
+- 缺点：计算复杂度高、过平滑问题、可扩展性挑战
+
+**案例推荐：**
+- [PyTorch Geometric教程](https://pytorch-geometric.readthedocs.io/en/latest/notes/introduction.html)
+- [社交网络分析项目](https://github.com/topics/gnn-social-network)
+- [分子性质预测案例](https://www.kaggle.com/code/dansbecker/gnn-molecular-property)
+- [推荐系统项目](https://github.com/topics/gnn-recommendation)
+- [知识图谱嵌入项目](https://github.com/topics/gnn-knowledge-graph)
+
+---
