@@ -1771,3 +1771,220 @@ AI系统能够自主修改自己的架构、算法和参数。
 - [生物计算机项目](https://github.com/topics/biological-computers)
 
 ---
+## 边缘智能与IoT算法
+
+### 361. 端侧大模型
+
+**运用场景：**
+- 移动AI应用
+- 离线智能助手
+- 边缘计算
+- 隐私保护
+
+**算法原理：**
+将大模型压缩和优化到能在端侧设备运行的程度。
+
+**优缺点：**
+- 优点：隐私保护、低延迟、离线可用
+- 缺点：性能折损、硬件要求、开发复杂
+
+**案例推荐：**
+- [端侧大模型教程](https://github.com/topics/on-device-large-models)
+- [移动端LLM项目](https://github.com/topics/mobile-llm)
+- [边缘AI部署案例](https://www.kaggle.com/code/renshengbushexie/edge-ai-deployment)
+- [离线智能助手项目](https://github.com/topics/offline-ai-assistant)
+
+### 362. 传感器融合智能
+
+**运用场景：**
+- IoT设备
+- 自动驾驶
+- 机器人感知
+- 环境监测
+
+**算法原理：**
+智能融合多种传感器数据，提供鲁棒的环境感知。
+
+**优缺点：**
+- 优点：鲁棒性强、精度高、信息互补
+- 缺点：标定复杂、数据同步、计算开销
+
+**案例推荐：**
+- [传感器融合教程](https://github.com/topics/sensor-fusion-intelligence)
+- [多模态感知项目](https://github.com/topics/multimodal-perception)
+- [环境感知案例](https://www.kaggle.com/code/renshengbushexie/environmental-sensing-fusion)
+- [机器人感知项目](https://github.com/topics/robotic-perception-fusion)
+
+### 363. 边缘协作学习
+
+**运用场景：**
+- 分布式IoT网络
+- 车联网
+- 智慧城市
+- 工业4.0
+
+**算法原理：**
+边缘设备之间协作进行机器学习，不依赖中心服务器。
+
+**优缺点：**
+- 优点：去中心化、延迟低、隐私保护
+- 缺点：协调困难、资源异构、可靠性挑战
+
+**案例推荐：**
+- [边缘协作学习教程](https://github.com/topics/edge-collaborative-learning)
+- [车联网协作项目](https://github.com/topics/vehicular-edge-computing)
+- [IoT协作智能案例](https://www.kaggle.com/code/renshengbushexie/iot-collaborative-intelligence)
+- [分布式边缘AI项目](https://github.com/topics/distributed-edge-ai)
+
+### 364. 自适应计算卸载
+
+**运用场景：**
+- 移动计算
+- 云边协同
+- 能耗优化
+- 服务质量保证
+
+**算法原理：**
+动态决定计算任务在本地处理还是卸载到云端或边缘。
+
+**优缺点：**
+- 优点：资源优化、能耗低、性能平衡
+- 缺点：决策复杂、网络依赖、延迟不确定
+
+**案例推荐：**
+- [计算卸载教程](https://github.com/topics/adaptive-computation-offloading)
+- [云边协同项目](https://github.com/topics/cloud-edge-collaboration)
+- [移动AI优化案例](https://www.kaggle.com/code/renshengbushexie/mobile-ai-optimization)
+- [能耗感知计算项目](https://github.com/topics/energy-aware-computing)
+
+### 365. 微服务AI架构
+
+**运用场景：**
+- 大规模AI系统
+- 模块化部署
+- 弹性扩展
+- 服务组合
+
+**算法原理：**
+将AI功能分解为独立的微服务，支持灵活组合和部署。
+
+**优缺点：**
+- 优点：模块化、可扩展、维护性好
+- 缺点：通信开销、复杂性高、调试困难
+
+**案例推荐：**
+- [微服务AI教程](https://github.com/topics/microservices-ai-architecture)
+- [AI服务网格项目](https://github.com/topics/ai-service-mesh)
+- [模块化AI部署案例](https://www.kaggle.com/code/renshengbushexie/modular-ai-deployment)
+- [弹性AI服务项目](https://github.com/topics/elastic-ai-services)
+
+---
+
+## 数字孪生与仿真
+
+### 366. 神经数字孪生
+
+**运用场景：**
+- 工业系统建模
+- 城市仿真
+- 设备预测维护
+- 过程优化
+
+**算法原理：**
+使用神经网络构建物理系统的数字镜像，实现实时同步和预测。
+
+**优缺点：**
+- 优点：实时同步、预测能力强、自适应更新
+- 缺点：建模复杂、数据需求大、验证困难
+
+**案例推荐：**
+- [神经数字孪生教程](https://github.com/topics/neural-digital-twins)
+- [工业孪生系统项目](https://github.com/topics/industrial-digital-twins)
+- [城市数字孪生案例](https://www.kaggle.com/code/renshengbushexie/urban-digital-twin)
+- [设备孪生项目](https://github.com/topics/equipment-digital-twins)
+
+### 367. 可微分仿真
+
+**运用场景：**
+- 机器人控制
+- 物理系统优化
+- 参数估计
+- 逆向设计
+
+**算法原理：**
+使物理仿真过程可微分，支持梯度优化和反向传播。
+
+**优缺点：**
+- 优点：端到端优化、物理一致、优化能力强
+- 缺点：数值稳定性、计算复杂、实现困难
+
+**案例推荐：**
+- [可微分仿真教程](https://github.com/topics/differentiable-simulation)
+- [机器人仿真项目](https://github.com/topics/differentiable-robot-simulation)
+- [物理参数估计案例](https://www.kaggle.com/code/renshengbushexie/physics-parameter-estimation)
+- [逆向设计项目](https://github.com/topics/inverse-design-simulation)
+
+### 368. 多智能体仿真
+
+**运用场景：**
+- 社会系统建模
+- 交通仿真
+- 经济建模
+- 生态系统研究
+
+**算法原理：**
+模拟多个智能体在环境中的交互行为和涌现现象。
+
+**优缺点：**
+- 优点：涌现行为建模、复杂系统理解、政策评估
+- 缺点：计算复杂、验证困难、参数敏感
+
+**案例推荐：**
+- [多智能体仿真教程](https://github.com/topics/multi-agent-simulation)
+- [社会仿真项目](https://github.com/topics/social-simulation)
+- [交通系统仿真案例](https://www.kaggle.com/code/renshengbushexie/traffic-system-simulation)
+- [生态建模项目](https://github.com/topics/ecological-modeling)
+
+### 369. 元宇宙物理引擎
+
+**运用场景：**
+- 虚拟世界构建
+- 物理仿真
+- 游戏开发
+- 虚拟实验
+
+**算法原理：**
+为虚拟环境提供真实的物理模拟，支持复杂交互。
+
+**优缺点：**
+- 优点：真实感强、交互丰富、沉浸体验
+- 缺点：计算需求大、实时性要求高、复杂度大
+
+**案例推荐：**
+- [元宇宙物理引擎教程](https://github.com/topics/metaverse-physics-engine)
+- [虚拟世界仿真项目](https://github.com/topics/virtual-world-simulation)
+- [沉浸式物理案例](https://www.kaggle.com/code/renshengbushexie/immersive-physics-simulation)
+- [虚拟实验平台项目](https://github.com/topics/virtual-experiment-platform)
+
+### 370. 预测性数字孪生
+
+**运用场景：**
+- 故障预测
+- 维护优化
+- 生产规划
+- 风险评估
+
+**算法原理：**
+不仅镜像当前状态，还能预测未来状态和可能的问题。
+
+**优缺点：**
+- 优点：前瞻性强、决策支持好、风险预警
+- 缺点：预测不确定性、模型复杂、数据质量依赖
+
+**案例推荐：**
+- [预测性孪生教程](https://github.com/topics/predictive-digital-twins)
+- [故障预测系统项目](https://github.com/topics/failure-prediction-twins)
+- [维护优化案例](https://www.kaggle.com/code/renshengbushexie/maintenance-optimization-twins)
+- [生产规划项目](https://github.com/topics/production-planning-twins)
+
+---
