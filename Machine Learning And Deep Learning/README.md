@@ -1,20 +1,12 @@
-# Machine Learning and Deep Learning Learning Materials
+# Machine Learning And Deep Learning Documentation
 
-## Introduction
-- Brief overview of machine learning and deep learning.
+This directory has been restructured into a **one algorithm per Markdown file** architecture.
 
-## Recommended Books
-- "Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow" by Aurélien Géron
-- "Deep Learning" by Ian Goodfellow, Yoshua Bengio, and Aaron Courville
+## Entry Points
+- [Global Taxonomy](taxonomy.md)
+- [Machine Learning](算法/机器学习/README.md)
+- [Deep Learning](算法/深度学习/README.md)
+- [Glossary](glossary.md)
+- [Archive](归档/README.md)
 
-## Online Courses
-- Coursera: Machine Learning by Andrew Ng
-- edX: Deep Learning with Python and PyTorch
-
-## Useful Libraries
-- Scikit-Learn
-- TensorFlow
-- PyTorch
-
-## Conclusion
-- Encouragement to explore these resources for further learning.
+- Algorithm files: 400

@@ -1,0 +1,81 @@
+# 044. Actor-Critic方法（Actor-Critic）
+
+> 一级分类：机器学习
+> 二级分类：强化学习
+> 任务类型：决策优化
+> 原始来源：readme_learning01.md / 强化学习
+
+## 算法速查表
+| 算法 | 任务类型 | 适用场景 | 优点 | 缺点 | 解决办法 | 常用参数 | 选型建议 | 解释方法 |
+|---|---|---|---|---|---|---|---|---|
+| Actor-Critic | 决策优化 | 连续/离散混合控制；需兼顾稳定性与样本效率的在线决策 | Actor直接优化策略，Critic提供低方差梯度信号；可扩展为A2C/A3C/PPO | 双网络耦合导致训练不稳定；价值偏差会误导策略；参数量更大 | 优势函数、目标网络/延迟更新、GAE、梯度裁剪 | 环境：$\gamma$；实现：actor_lr、critic_lr、value_coef、entropy_coef | 通用首选框架；需更稳更新选PPO，需确定性连续动作选DDPG/TD3 | 跟踪TD误差、优势分布、策略熵与价值校准误差 |
+
+## 适用场景
+- **机器人控制**：动作连续、状态噪声大，Actor直接输出动作分布，Critic降低更新方差。
+- **工业过程优化**：决策周期固定，TD学习可利用每步反馈而非等待整回合。
+- **多智能体子模块**：许多MARL方法（MADDPG、MAPPO）都以Actor-Critic为骨架。
+- **高频在线决策**：相对纯PG，Actor-Critic更快得到可用策略。
+
+## 模型实现原理
+MDP设定同前，策略$\pi_\theta(a|s)$为Actor，状态值$V_w(s)$为Critic。定义一步TD误差：
+$$
+\delta_t=r_t+\gamma V_w(s_{t+1})-V_w(s_t).
+$$
+Critic最小化
+$$
+L_V(w)=\frac{1}{2}\,\mathbb{E}[\delta_t^2],
+$$
+其梯度为
+$$
+\nabla_w L_V=-\mathbb{E}[\delta_t\nabla_w V_w(s_t)].
+$$
+Actor使用策略梯度近似：
+$$
+\nabla_\theta J(\theta)\approx\mathbb{E}\big[\nabla_\theta\log\pi_\theta(a_t|s_t)\,\hat A_t\big],
+$$
+其中常用$\hat A_t=\delta_t$（一步优势），更一般为
+$$
+A^{\pi}(s,a)=Q^{\pi}(s,a)-V^{\pi}(s).
+$$
+联合目标可写为
+$$
+\mathcal{L}=\mathcal{L}_{policy}+c_v\mathcal{L}_V-c_e\mathcal{H}(\pi_\theta),
+$$
+通过价值损失和熵正则共同稳定训练。
+
+## 主要优点
+- **方差-偏差折中优于纯PG**：Critic bootstrap降低方差，更新频率更高。
+- **框架通用性高**：同一骨架可平滑扩展到PPO/TRPO/DDPG等主流算法。
+- **实时性更好**：每步可更新，较整回合蒙特卡洛更新延迟更低。
+- **可扩展多头结构**：易加入风险值、约束值等附加Critic实现多目标优化。
+
+## 主要缺点
+- **估计偏差传递**：Critic若系统性高估，Actor会被错误优势驱动。
+- **训练耦合复杂**：Actor过快更新会让Critic目标漂移，反之策略停滞。
+- **超参数多**：actor/critic学习率、损失权重、熵系数共同决定稳定区间。
+- **实现调试成本高**：需同时排查策略退化与价值发散两类故障。
+
+## 针对缺点的解决办法
+- 使用**优势标准化+GAE**控制方差，并提升长时序信用分配质量。
+- 采用**不同学习率与更新频率**（通常critic更快），减轻双网络振荡。
+- 加入**梯度裁剪与价值函数裁剪**，限制单次更新幅度。
+- 通过**KL监控与早停**防止Actor跨步过大导致性能回退。
+
+## 常用参数
+- **环境参数**：$\gamma$、回合长度$T$、奖励缩放。
+- **实现参数**：actor_lr、critic_lr、value_coef($c_v$)、entropy_coef($c_e$)、GAE参数$\lambda$、max_grad_norm。
+- **采样参数**：每次更新步数n_steps、并行环境数num_envs、mini-batch数。
+
+## 选型建议
+- **连续/离散动作**：两者都适用，是最稳妥的通用基线。
+- **样本效率**：优于REINFORCE，若仍不足可转离策略Actor-Critic（DDPG/TD3/SAC）。
+- **稳定性诉求**：高稳定场景优先PPO/TRPO形式的Actor-Critic。
+- **部署限制**：若推理端需低时延，Actor单网络执行即可，Critic仅训练期使用。
+
+## 模型解释方法
+- 观察$\delta_t$分布与优势分布是否长期偏正/偏负，判断价值偏差方向。
+- 对比策略熵与成功率，识别“过早确定性”引起的局部最优。
+- 评估$V_w(s)$与实际回报$G_t$校准误差（如MSE、分位数误差）。
+
+## 参考资料
+- [Legacy Source: readme_learning01.md](../../../归档/readme_learning01.md)

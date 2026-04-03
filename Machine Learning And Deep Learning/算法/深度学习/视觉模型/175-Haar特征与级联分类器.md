@@ -1,0 +1,81 @@
+# 175. Haar特征与级联分类器（Haar Classifier）
+
+> 一级分类：深度学习
+> 二级分类：视觉模型
+> 任务类型：视觉特征提取
+> 原始来源：readme_learning02.md / 计算机视觉专用算法
+
+## 算法速查表
+| 算法 | 任务类型 | 适用场景 | 优点 | 缺点 | 解决办法 | 常用参数 | 选型建议 | 解释方法 |
+|---|---|---|---|---|---|---|---|---|
+| Haar特征与级联分类器 | 视觉特征提取 | 人脸/眼睛实时检测；嵌入式低算力检测；传统CV教学与基线。 | 积分图计算极快；级联可早停减少平均计算；无需GPU。 | 对姿态、遮挡、复杂背景鲁棒性有限；泛化能力弱于深度检测器。 | 增加多视角级联；硬负样本挖掘；与轻量CNN级联融合。 | OpenCV: `CascadeClassifier.detectMultiScale(scaleFactor, minNeighbors, minSize)`。 | 极低算力实时检测可选；现代通用检测任务优先YOLO/SSD。 | 级联阶段通过率、误检窗口可视化。 |
+
+## 适用场景
+- 摄像头端人脸初筛。
+- 低功耗门禁设备目标检测。
+- 传统视觉课程与可解释基线系统。
+- 作为深度模型前置候选区域提议器。
+
+## 模型实现原理
+积分图定义：
+$$
+ii(x,y)=\sum_{x'\le x,\,y'\le y} i(x',y')
+$$
+任意矩形和可用4次查表得到。Haar特征是相邻矩形亮度差：
+$$
+f=\sum_{R_1}i-\sum_{R_2}i
+$$
+
+AdaBoost训练弱分类器 $h_t(x)$：
+$$
+\epsilon_t=\sum_i w_i\mathbf{1}(h_t(x_i)\neq y_i),\quad
+\alpha_t=\frac12\ln\frac{1-\epsilon_t}{\epsilon_t}
+$$
+强分类器
+$$
+H(x)=\mathrm{sign}\left(\sum_t\alpha_t h_t(x)-\theta\right)
+$$
+权重更新
+$$
+w_i\leftarrow w_i\exp(-\alpha_t y_i h_t(x_i))
+$$
+
+级联检测：第 $k$ 阶检测率 $d_k$、虚警率 $f_k$，整体
+$$
+D=\prod_k d_k,\quad F=\prod_k f_k
+$$
+前级快速拒绝大部分负样本实现实时性。若接入可微替代（soft cascade），可用BCE损失并按链式法则反传阈值参数。
+
+## 主要优点
+- CPU实时性能优秀。
+- 特征与决策过程透明，便于调试。
+- 训练与部署依赖轻量。
+
+## 主要缺点
+- 对姿态和遮挡变化适应性差。
+- 复杂背景下误检率较高。
+- 需针对任务重新训练级联器。
+
+## 针对缺点的解决办法
+- 多视角级联并行检测提升姿态鲁棒性。
+- 增加困难负样本做hard negative mining。
+- 采用“Haar预筛+轻量CNN复核”两级系统。
+
+## 常用参数
+- `scaleFactor`：图像金字塔缩放步长。
+- `minNeighbors`：越大误检更少但召回下降。
+- `minSize/maxSize`：目标尺寸先验。
+- 训练阶段每级目标 `minHitRate/maxFalseAlarmRate`。
+
+## 选型建议
+- 没有GPU且目标类别少时可用Haar级联。
+- 若场景复杂或类别多，直接转深度检测框架。
+- 可把Haar作为fallback通道保证极端低延迟。
+
+## 模型解释方法
+- 展示每级级联通过率定位误检来源。
+- 可视化被选中的Haar模板与响应值。
+- 分析窗口尺度分布判断阈值设置是否偏置。
+
+## 参考资料
+- [Legacy Source: readme_learning02.md](../../../归档/readme_learning02.md)
