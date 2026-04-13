@@ -85,4 +85,9 @@ $$
 - 审计 top-k 高概率续写，验证是否出现模板化偏差。
 
 ## 参考资料
+### 教材与综述
+- Zhang, A., Lipton, Z. C., Li, M., & Smola, A. Dive into Deep Learning. Cambridge University Press, 2023. Chapter 14-15.
+- Jurafsky, D., & Martin, J. H. Speech and Language Processing. Pearson, 2023.
+
+### 扩展阅读
 - [Legacy Source: readme_learning02.md](../../../归档/readme_learning02.md)

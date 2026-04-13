@@ -76,4 +76,10 @@ $$
 - 在多候选中绘制“语义一致性-视觉质量”二元排序曲线。
 
 ## 参考资料
+### 教材与综述
+- Kingma, D. P., & Welling, M. Auto-Encoding Variational Bayes. ICLR, 2014.
+- Goodfellow, I. J., et al. Generative Adversarial Nets. NeurIPS, 2014.
+- Zhang, A., Lipton, Z. C., Li, M., & Smola, A. Dive into Deep Learning. Cambridge University Press, 2023. Chapter 17.
+
+### 扩展阅读
 - [Legacy Source: readme_learning01.md](../../../归档/readme_learning01.md)

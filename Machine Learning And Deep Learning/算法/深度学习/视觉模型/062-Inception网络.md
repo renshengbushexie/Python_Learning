@@ -16,6 +16,11 @@
 - 检测系统中的多尺度特征主干。
 - 医学病灶大小跨度大的识别任务。
 
+### 作用与产生背景
+- Inception 网络的核心作用，是在同一个模块里并行观察不同尺度的视觉模式，让模型自己决定该更关注细节纹理还是更大范围的结构。
+- 它出现的背景，是单一卷积核大小很难同时兼顾小目标细节和大目标轮廓，而一味把网络做深做宽又会迅速推高计算成本。
+- Inception 的设计思路可以理解为“多尺度卷积的工程折中”：既要多尺度能力，又要通过 1×1 瓶颈把参数量压住。
+
 ## 模型实现原理
 Inception模块并行分支：$1\times1,3\times3,5\times5,\text{pool}\to1\times1$，输出通道拼接
 $$
@@ -75,5 +80,11 @@ Inception-v3 用卷积分解（如 $3\times3\to1\times3+3\times1$）；v4 引入
 - 输入尺度扰动实验验证多尺度鲁棒性。
 
 ## 参考资料
+### 教材与综述
+- Zhang, A., Lipton, Z. C., Li, M., & Smola, A. Dive into Deep Learning. Cambridge University Press, 2023. Chapter 7-8, 13.
+- Krizhevsky, A., Sutskever, I., & Hinton, G. E. ImageNet Classification with Deep Convolutional Neural Networks. NeurIPS, 2012.
+- He, K., et al. Deep Residual Learning for Image Recognition. CVPR, 2016.
+
+### 扩展阅读
 - [Legacy Source: readme_learning01.md](../../../归档/readme_learning01.md)
 - [Inception网络教程](https://pytorch.org/hub/pytorch_vision_inception_v3/)
